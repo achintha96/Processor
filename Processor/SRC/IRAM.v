@@ -1,24 +1,17 @@
-module IRAM (address,
-             clock,
-	         data,
-	         wren,
-	         q);
+module IRAM (
+input wire [7:0] address,
+input clock,
+output reg [15:0] q);
 
-input [7:0] address;
-input clock;
-input [15:0] data;
-input wren;
-output [15:0] q;
-
-//reg [] IRAM [];
+reg [15:0] IRAM [4095:0];
 
 initial begin
-    //IRAM[0] = 16'b0000000000000000;
-    //IRAM[1] = 16'b0000000000000001;
+    IRAM[0] = 16'b0000000000000000;
+    IRAM[1] = 16'b0000000000000001;
 end
 
-always @ (posedge clock)
+always @(posedge clock)
 begin
-    //if MEM
+	q <= IRAM[address];
 end
 endmodule
