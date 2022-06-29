@@ -1,13 +1,4 @@
-module DRAM (
-input wire [15:0] address,
-input clock,
-input wire [7:0] data,
-input wren,
-output reg [7:0] q);
-reg [7:0] DRAM[65535:0];
-
-initial begin
-    DRAM[0] = 8'b10100001;
+DRAM[0] = 8'b10100001;
 DRAM[1] = 8'b10100001;
 DRAM[2] = 8'b10011101;
 DRAM[3] = 8'b10100001;
@@ -65543,14 +65534,3 @@ DRAM[65532] = 8'b1011100;
 DRAM[65533] = 8'b1101000;
 DRAM[65534] = 8'b1101000;
 DRAM[65535] = 8'b1101100;
-
-end
-
-always @ (posedge clock)
-begin
-    if(wren == 0)
-        q <= DRAM[address];
-    else
-        DRAM[address] <= data;
-end
-endmodule

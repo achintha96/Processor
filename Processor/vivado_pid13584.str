@@ -1543,3 +1543,13 @@ selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (cQ, cp)
 // Elapsed time: 11 seconds
 dismissDialog("Reloading"); // bx (cp)
 selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 6); // k (j, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,527 MB. GUI used memory: 109 MB. Current time: 6/29/22, 11:04:17 PM IST
+// Elapsed time: 2211 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IRAM.v", 1); // k (j, cp)
+selectCodeEditor("IRAM.v", 268, 144); // cl (w, cp)
+typeControlKey((HResource) null, "IRAM.v", 'v'); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 8022 ms. Increasing delay to 24066 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 30 ms. Decreasing delay to 2030 ms.
