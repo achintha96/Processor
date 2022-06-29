@@ -11,3 +11,4 @@
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/Processor.xpr
+update_compile_order -fileset sources_1
