@@ -2,10 +2,10 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Wed Jun 29 16:00:37 2022
-# Process ID: 1324
+# Start of session at: Wed Jun 29 19:30:45 2022
+# Process ID: 13584
 # Current directory: C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent84 C:\Users\anjan\OneDrive\Desktop\Pocessor\Processor\Processor\Processor.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16972 C:\Users\anjan\OneDrive\Desktop\Pocessor\Processor\Processor\Processor.xpr
 # Log file: C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/vivado.log
 # Journal file: C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor\vivado.jou
 #-----------------------------------------------------------
@@ -20,7 +20,6 @@ CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/anjan/OneDriv
 CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/state_to_7seg.v'.
 CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/clock25Mhz_bb.v'.
 CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IRAM_bb.v'.
-CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IRAM.v'.
 CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/DRAM_bb.v'.
 CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/clock25Mhz_syn.v'.
 CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/clock25Mhz_inst.v'.
@@ -29,59 +28,1983 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
-open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:10 . Memory (MB): peak = 715.133 ; gain = 90.254
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 691.945 ; gain = 68.141
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
 update_compile_order -fileset sources_1
 synth_design -rtl -name rtl_1
 Command: synth_design -rtl -name rtl_1
 Starting synth_design
 Using part: xc7k70tfbv676-1
 Top: Top_Level_Module
----------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 800.812 ; gain = 41.086
----------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'Top_Level_Module' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:1]
-ERROR: [Synth 8-439] module 'IRAM' not found [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:48]
-ERROR: [Synth 8-6156] failed synthesizing module 'Top_Level_Module' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:1]
----------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 854.906 ; gain = 95.180
----------------------------------------------------------------------------------
-RTL Elaboration failed
-1 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
+ERROR: [Synth 8-1727] cannot assign to non-variable IRAM [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IRAM.v:16]
+ERROR: [Synth 8-2576] procedural assignment to a non-register IRAM is not permitted [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IRAM.v:16]
+ERROR: [Synth 8-1041] IRAM is not valid in an expression [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IRAM.v:16]
+ERROR: [Synth 8-1727] cannot assign to non-variable IRAM [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IRAM.v:17]
+ERROR: [Synth 8-2576] procedural assignment to a non-register IRAM is not permitted [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IRAM.v:17]
+ERROR: [Synth 8-1041] IRAM is not valid in an expression [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IRAM.v:17]
+INFO: [Synth 8-2350] module IRAM ignored due to previous errors [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IRAM.v:1]
+Failed to read verilog 'C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IRAM.v'
+1 Infos, 0 Warnings, 0 Critical Warnings and 7 Errors encountered.
 synth_design failed
 ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
-update_compile_order -fileset sources_1
 synth_design -rtl -name rtl_1
 Command: synth_design -rtl -name rtl_1
 Starting synth_design
 Using part: xc7k70tfbv676-1
 Top: Top_Level_Module
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 854.906 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 813.078 ; gain = 3.004
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'Top_Level_Module' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:1]
-INFO: [Synth 8-6157] synthesizing module 'IRAM' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IRAM.v:39]
-ERROR: [Synth 8-439] module 'altsyncram' not found [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IRAM.v:62]
-	Parameter clock_enable_input_a bound to: BYPASS - type: string 
-	Parameter clock_enable_output_a bound to: BYPASS - type: string 
-	Parameter init_file bound to: Instructions.mif - type: string 
-	Parameter intended_device_family bound to: Cyclone IV E - type: string 
-	Parameter lpm_hint bound to: ENABLE_RUNTIME_MOD=NO - type: string 
-	Parameter lpm_type bound to: altsyncram - type: string 
-	Parameter numwords_a bound to: 32'sb00000000000000000000000100000000 
-	Parameter operation_mode bound to: SINGLE_PORT - type: string 
-	Parameter outdata_aclr_a bound to: NONE - type: string 
-	Parameter outdata_reg_a bound to: UNREGISTERED - type: string 
-	Parameter power_up_uninitialized bound to: FALSE - type: string 
-	Parameter read_during_write_mode_port_a bound to: NEW_DATA_NO_NBE_READ - type: string 
-	Parameter widthad_a bound to: 32'sb00000000000000000000000000001000 
-	Parameter width_a bound to: 32'sb00000000000000000000000000010000 
-	Parameter width_byteena_a bound to: 32'sb00000000000000000000000000000001 
-ERROR: [Synth 8-6156] failed synthesizing module 'IRAM' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IRAM.v:39]
+INFO: [Synth 8-6157] synthesizing module 'IRAM' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IRAM.v:1]
+WARNING: [Synth 8-3848] Net q in module/entity IRAM does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IRAM.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'IRAM' (1#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IRAM.v:1]
+WARNING: [Synth 8-350] instance 'IRAM' of module 'IRAM' requires 5 connections, but only 3 given [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:48]
+INFO: [Synth 8-6157] synthesizing module 'DRAM' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/DRAM.v:1]
+WARNING: [Synth 8-3848] Net sub_wire0 in module/entity DRAM does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/DRAM.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'DRAM' (2#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/DRAM.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Processor' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Processor.v:1]
+INFO: [Synth 8-6157] synthesizing module 'statemachine' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/State_Machine.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'statemachine' (3#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/State_Machine.v:1]
+WARNING: [Synth 8-689] width (3) of port connection 'ALU_control' does not match port width (4) of module 'statemachine' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Processor.v:51]
+INFO: [Synth 8-6157] synthesizing module 'IR' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IR.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'IR' (4#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IR.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/ALU.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/ALU.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (5#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/ALU.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Bus' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Bus.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Bus.v:37]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Bus.v:99]
+INFO: [Synth 8-6155] done synthesizing module 'Bus' (6#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Bus.v:1]
+INFO: [Synth 8-6157] synthesizing module 'PC' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/PC.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (7#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/PC.v:1]
+INFO: [Synth 8-6157] synthesizing module 'IDC_controller' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IDC_controller.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IDC_controller.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'IDC_controller' (8#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IDC_controller.v:1]
+INFO: [Synth 8-6157] synthesizing module 'R' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/R.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'R' (9#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/R.v:1]
+INFO: [Synth 8-6157] synthesizing module 'shift_registers' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Shift_registers.v:1]
+WARNING: [Synth 8-567] referenced signal 'SR2' should be on the sensitivity list [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Shift_registers.v:14]
+WARNING: [Synth 8-567] referenced signal 'SR1' should be on the sensitivity list [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Shift_registers.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'shift_registers' (10#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Shift_registers.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Read_registers' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Read_Registers.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Read_registers' (11#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Read_Registers.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Write_registers' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Write_registers.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Write_registers' (12#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Write_registers.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MDR' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MDR.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'MDR' (13#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MDR.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MAR' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MAR.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MAR.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'MAR' (14#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MAR.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Processor' (15#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Processor.v:1]
+ERROR: [Synth 8-448] named port connection 'start_Tx' does not exist for instance 'Processor' of module 'Processor' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:66]
+ERROR: [Synth 8-448] named port connection 'LED' does not exist for instance 'Processor' of module 'Processor' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:67]
+ERROR: [Synth 8-448] named port connection 'AC_LED' does not exist for instance 'Processor' of module 'Processor' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:68]
 ERROR: [Synth 8-6156] failed synthesizing module 'Top_Level_Module' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:1]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 870.480 ; gain = 15.574
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 855.078 ; gain = 45.004
 ---------------------------------------------------------------------------------
 RTL Elaboration failed
-2 Infos, 0 Warnings, 0 Critical Warnings and 4 Errors encountered.
+36 Infos, 6 Warnings, 0 Critical Warnings and 5 Errors encountered.
 synth_design failed
 ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7k70tfbv676-1
+Top: Top_Level_Module
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 855.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top_Level_Module' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:1]
+INFO: [Synth 8-6157] synthesizing module 'IRAM' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IRAM.v:1]
+WARNING: [Synth 8-3848] Net q in module/entity IRAM does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IRAM.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'IRAM' (1#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IRAM.v:1]
+WARNING: [Synth 8-350] instance 'IRAM' of module 'IRAM' requires 5 connections, but only 3 given [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:48]
+INFO: [Synth 8-6157] synthesizing module 'DRAM' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/DRAM.v:1]
+WARNING: [Synth 8-3848] Net sub_wire0 in module/entity DRAM does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/DRAM.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'DRAM' (2#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/DRAM.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Processor' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Processor.v:1]
+INFO: [Synth 8-6157] synthesizing module 'statemachine' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/State_Machine.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'statemachine' (3#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/State_Machine.v:1]
+WARNING: [Synth 8-689] width (3) of port connection 'ALU_control' does not match port width (4) of module 'statemachine' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Processor.v:51]
+INFO: [Synth 8-6157] synthesizing module 'IR' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IR.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'IR' (4#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IR.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/ALU.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/ALU.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (5#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/ALU.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Bus' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Bus.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Bus.v:37]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Bus.v:99]
+INFO: [Synth 8-6155] done synthesizing module 'Bus' (6#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Bus.v:1]
+INFO: [Synth 8-6157] synthesizing module 'PC' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/PC.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (7#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/PC.v:1]
+INFO: [Synth 8-6157] synthesizing module 'IDC_controller' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IDC_controller.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IDC_controller.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'IDC_controller' (8#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IDC_controller.v:1]
+INFO: [Synth 8-6157] synthesizing module 'R' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/R.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'R' (9#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/R.v:1]
+INFO: [Synth 8-6157] synthesizing module 'shift_registers' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Shift_registers.v:1]
+WARNING: [Synth 8-567] referenced signal 'SR2' should be on the sensitivity list [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Shift_registers.v:14]
+WARNING: [Synth 8-567] referenced signal 'SR1' should be on the sensitivity list [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Shift_registers.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'shift_registers' (10#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Shift_registers.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Read_registers' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Read_Registers.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Read_registers' (11#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Read_Registers.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Write_registers' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Write_registers.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Write_registers' (12#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Write_registers.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MDR' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MDR.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'MDR' (13#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MDR.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MAR' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MAR.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MAR.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'MAR' (14#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MAR.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Processor' (15#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Processor.v:1]
+ERROR: [Synth 8-448] named port connection 'start_Tx' does not exist for instance 'Processor' of module 'Processor' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:66]
+ERROR: [Synth 8-448] named port connection 'LED' does not exist for instance 'Processor' of module 'Processor' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:67]
+ERROR: [Synth 8-448] named port connection 'AC_LED' does not exist for instance 'Processor' of module 'Processor' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:68]
+ERROR: [Synth 8-6156] failed synthesizing module 'Top_Level_Module' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 859.758 ; gain = 4.680
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+36 Infos, 6 Warnings, 0 Critical Warnings and 5 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7k70tfbv676-1
+Top: Processor
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 859.758 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Processor' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Processor.v:1]
+INFO: [Synth 8-6157] synthesizing module 'statemachine' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/State_Machine.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'statemachine' (1#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/State_Machine.v:1]
+WARNING: [Synth 8-689] width (3) of port connection 'ALU_control' does not match port width (4) of module 'statemachine' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Processor.v:51]
+INFO: [Synth 8-6157] synthesizing module 'IR' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IR.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'IR' (2#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IR.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/ALU.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/ALU.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (3#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/ALU.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Bus' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Bus.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Bus.v:37]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Bus.v:99]
+INFO: [Synth 8-6155] done synthesizing module 'Bus' (4#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Bus.v:1]
+INFO: [Synth 8-6157] synthesizing module 'PC' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/PC.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (5#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/PC.v:1]
+INFO: [Synth 8-6157] synthesizing module 'IDC_controller' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IDC_controller.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IDC_controller.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'IDC_controller' (6#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IDC_controller.v:1]
+INFO: [Synth 8-6157] synthesizing module 'R' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/R.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'R' (7#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/R.v:1]
+INFO: [Synth 8-6157] synthesizing module 'shift_registers' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Shift_registers.v:1]
+WARNING: [Synth 8-567] referenced signal 'SR2' should be on the sensitivity list [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Shift_registers.v:14]
+WARNING: [Synth 8-567] referenced signal 'SR1' should be on the sensitivity list [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Shift_registers.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'shift_registers' (8#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Shift_registers.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Read_registers' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Read_Registers.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Read_registers' (9#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Read_Registers.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Write_registers' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Write_registers.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Write_registers' (10#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Write_registers.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MDR' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MDR.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'MDR' (11#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MDR.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MAR' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MAR.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MAR.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'MAR' (12#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MAR.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Processor' (13#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Processor.v:1]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[15]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[14]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[13]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[12]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[7]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[6]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[5]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[4]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[3]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[2]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[1]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[0]
+WARNING: [Synth 8-3331] design PC has unconnected port instruction[15]
+WARNING: [Synth 8-3331] design PC has unconnected port instruction[14]
+WARNING: [Synth 8-3331] design PC has unconnected port instruction[13]
+WARNING: [Synth 8-3331] design PC has unconnected port instruction[12]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[15]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[14]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[13]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[12]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[7]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[6]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[5]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[4]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[3]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[2]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[1]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[0]
+WARNING: [Synth 8-3331] design ALU has unconnected port instruction[15]
+WARNING: [Synth 8-3331] design ALU has unconnected port instruction[14]
+WARNING: [Synth 8-3331] design ALU has unconnected port instruction[13]
+WARNING: [Synth 8-3331] design ALU has unconnected port instruction[12]
+WARNING: [Synth 8-3331] design IR has unconnected port clock
+WARNING: [Synth 8-3331] design statemachine has unconnected port instruction[7]
+WARNING: [Synth 8-3331] design statemachine has unconnected port instruction[6]
+WARNING: [Synth 8-3331] design statemachine has unconnected port instruction[5]
+WARNING: [Synth 8-3331] design statemachine has unconnected port instruction[4]
+WARNING: [Synth 8-3331] design statemachine has unconnected port instruction[3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 868.621 ; gain = 8.863
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 868.621 ; gain = 8.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 868.621 ; gain = 8.863
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1180.340 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:24 ; elapsed = 00:00:18 . Memory (MB): peak = 1241.375 ; gain = 381.617
+35 Infos, 41 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:19 . Memory (MB): peak = 1241.375 ; gain = 381.617
+set_property top Top_Level_Module [current_fileset]
+update_compile_order -fileset sources_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1249.176 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top_Level_Module' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:1]
+INFO: [Synth 8-6157] synthesizing module 'IRAM' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IRAM.v:1]
+WARNING: [Synth 8-3848] Net q in module/entity IRAM does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IRAM.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'IRAM' (1#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IRAM.v:1]
+WARNING: [Synth 8-350] instance 'IRAM' of module 'IRAM' requires 5 connections, but only 3 given [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:48]
+INFO: [Synth 8-6157] synthesizing module 'DRAM' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/DRAM.v:1]
+WARNING: [Synth 8-3848] Net sub_wire0 in module/entity DRAM does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/DRAM.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'DRAM' (2#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/DRAM.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Processor' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Processor.v:1]
+INFO: [Synth 8-6157] synthesizing module 'statemachine' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/State_Machine.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'statemachine' (3#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/State_Machine.v:1]
+WARNING: [Synth 8-689] width (3) of port connection 'ALU_control' does not match port width (4) of module 'statemachine' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Processor.v:51]
+INFO: [Synth 8-6157] synthesizing module 'IR' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IR.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'IR' (4#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IR.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/ALU.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/ALU.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (5#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/ALU.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Bus' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Bus.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Bus.v:37]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Bus.v:99]
+INFO: [Synth 8-6155] done synthesizing module 'Bus' (6#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Bus.v:1]
+INFO: [Synth 8-6157] synthesizing module 'PC' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/PC.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (7#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/PC.v:1]
+INFO: [Synth 8-6157] synthesizing module 'IDC_controller' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IDC_controller.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IDC_controller.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'IDC_controller' (8#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IDC_controller.v:1]
+INFO: [Synth 8-6157] synthesizing module 'R' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/R.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'R' (9#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/R.v:1]
+INFO: [Synth 8-6157] synthesizing module 'shift_registers' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Shift_registers.v:1]
+WARNING: [Synth 8-567] referenced signal 'SR2' should be on the sensitivity list [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Shift_registers.v:14]
+WARNING: [Synth 8-567] referenced signal 'SR1' should be on the sensitivity list [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Shift_registers.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'shift_registers' (10#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Shift_registers.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Read_registers' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Read_Registers.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Read_registers' (11#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Read_Registers.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Write_registers' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Write_registers.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Write_registers' (12#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Write_registers.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MDR' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MDR.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'MDR' (13#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MDR.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MAR' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MAR.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MAR.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'MAR' (14#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MAR.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Processor' (15#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Processor.v:1]
+WARNING: [Synth 8-3848] Net address_LED in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:4]
+WARNING: [Synth 8-3848] Net data_LED in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:5]
+WARNING: [Synth 8-3848] Net dout1 in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:6]
+WARNING: [Synth 8-3848] Net dout2 in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:7]
+WARNING: [Synth 8-3848] Net AC_0 in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:8]
+WARNING: [Synth 8-3848] Net AC_1 in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:9]
+WARNING: [Synth 8-3848] Net AC_2 in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:10]
+WARNING: [Synth 8-3848] Net Rx_done in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:65]
+WARNING: [Synth 8-3848] Net DRAM_address in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:23]
+WARNING: [Synth 8-3848] Net DRAM_write_data in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:24]
+WARNING: [Synth 8-3848] Net write_DRAM in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:25]
+WARNING: [Synth 8-3848] Net clk_out in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:27]
+WARNING: [Synth 8-3848] Net DRAM_to_processor in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'Top_Level_Module' (16#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:1]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[15]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[14]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[13]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[12]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[7]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[6]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[5]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[4]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[3]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[2]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[1]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[0]
+WARNING: [Synth 8-3331] design PC has unconnected port instruction[15]
+WARNING: [Synth 8-3331] design PC has unconnected port instruction[14]
+WARNING: [Synth 8-3331] design PC has unconnected port instruction[13]
+WARNING: [Synth 8-3331] design PC has unconnected port instruction[12]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[15]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[14]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[13]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[12]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[7]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[6]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[5]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[4]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[3]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[2]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[1]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[0]
+WARNING: [Synth 8-3331] design ALU has unconnected port instruction[15]
+WARNING: [Synth 8-3331] design ALU has unconnected port instruction[14]
+WARNING: [Synth 8-3331] design ALU has unconnected port instruction[13]
+WARNING: [Synth 8-3331] design ALU has unconnected port instruction[12]
+WARNING: [Synth 8-3331] design IR has unconnected port clock
+WARNING: [Synth 8-3331] design statemachine has unconnected port instruction[7]
+WARNING: [Synth 8-3331] design statemachine has unconnected port instruction[6]
+WARNING: [Synth 8-3331] design statemachine has unconnected port instruction[5]
+WARNING: [Synth 8-3331] design statemachine has unconnected port instruction[4]
+WARNING: [Synth 8-3331] design statemachine has unconnected port instruction[3]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[7]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[6]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[5]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[4]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[3]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[2]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[1]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[0]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[15]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[14]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[13]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[12]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[11]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[10]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[9]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[8]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[7]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[6]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[5]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[4]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[3]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[2]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[1]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[0]
+WARNING: [Synth 8-3331] design DRAM has unconnected port clock
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[7]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[6]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[5]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[4]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[3]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[2]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[1]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[0]
+WARNING: [Synth 8-3331] design DRAM has unconnected port wren
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[15]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[14]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[13]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[12]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[11]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[10]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[9]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[8]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[7]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[6]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[5]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[4]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[3]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[2]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[1]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[0]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[7]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[6]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[5]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[4]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[3]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[2]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[1]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[0]
+WARNING: [Synth 8-3331] design IRAM has unconnected port clock
+WARNING: [Synth 8-3331] design IRAM has unconnected port data[15]
+WARNING: [Synth 8-3331] design IRAM has unconnected port data[14]
+WARNING: [Synth 8-3331] design IRAM has unconnected port data[13]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1265.527 ; gain = 16.352
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin Processor:clock to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:58]
+WARNING: [Synth 8-3295] tying undriven pin Processor:DRAM_input_data[7] to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:58]
+WARNING: [Synth 8-3295] tying undriven pin Processor:DRAM_input_data[6] to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:58]
+WARNING: [Synth 8-3295] tying undriven pin Processor:DRAM_input_data[5] to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:58]
+WARNING: [Synth 8-3295] tying undriven pin Processor:DRAM_input_data[4] to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:58]
+WARNING: [Synth 8-3295] tying undriven pin Processor:DRAM_input_data[3] to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:58]
+WARNING: [Synth 8-3295] tying undriven pin Processor:DRAM_input_data[2] to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:58]
+WARNING: [Synth 8-3295] tying undriven pin Processor:DRAM_input_data[1] to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:58]
+WARNING: [Synth 8-3295] tying undriven pin Processor:DRAM_input_data[0] to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:58]
+WARNING: [Synth 8-3295] tying undriven pin Processor:enable_processor to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:58]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1265.527 ; gain = 16.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1265.527 ; gain = 16.352
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 1344.543 ; gain = 95.367
+refresh_design
+ERROR: [Synth 8-2715] syntax error near ) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:20]
+Failed to read verilog 'C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v'
+ERROR: [Common 17-39] 'refresh_design' failed due to earlier errors.
+update_compile_order -fileset sources_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1345.520 ; gain = 0.977
+---------------------------------------------------------------------------------
+ERROR: [Synth 8-439] module 'Top_Level_Module' not found
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1370.004 ; gain = 25.461
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+ERROR: [Common 17-39] 'refresh_design' failed due to earlier errors.
+update_compile_order -fileset sources_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1374.121 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top_Level_Module' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:1]
+INFO: [Synth 8-6157] synthesizing module 'IRAM' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IRAM.v:1]
+WARNING: [Synth 8-3848] Net q in module/entity IRAM does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IRAM.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'IRAM' (1#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IRAM.v:1]
+WARNING: [Synth 8-350] instance 'IRAM' of module 'IRAM' requires 5 connections, but only 3 given [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:49]
+INFO: [Synth 8-6157] synthesizing module 'DRAM' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/DRAM.v:1]
+WARNING: [Synth 8-3848] Net sub_wire0 in module/entity DRAM does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/DRAM.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'DRAM' (2#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/DRAM.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Processor' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Processor.v:1]
+INFO: [Synth 8-6157] synthesizing module 'statemachine' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/State_Machine.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'statemachine' (3#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/State_Machine.v:1]
+WARNING: [Synth 8-689] width (3) of port connection 'ALU_control' does not match port width (4) of module 'statemachine' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Processor.v:51]
+INFO: [Synth 8-6157] synthesizing module 'IR' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IR.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'IR' (4#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IR.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/ALU.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/ALU.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (5#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/ALU.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Bus' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Bus.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Bus.v:37]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Bus.v:99]
+INFO: [Synth 8-6155] done synthesizing module 'Bus' (6#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Bus.v:1]
+INFO: [Synth 8-6157] synthesizing module 'PC' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/PC.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (7#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/PC.v:1]
+INFO: [Synth 8-6157] synthesizing module 'IDC_controller' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IDC_controller.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IDC_controller.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'IDC_controller' (8#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IDC_controller.v:1]
+INFO: [Synth 8-6157] synthesizing module 'R' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/R.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'R' (9#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/R.v:1]
+INFO: [Synth 8-6157] synthesizing module 'shift_registers' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Shift_registers.v:1]
+WARNING: [Synth 8-567] referenced signal 'SR2' should be on the sensitivity list [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Shift_registers.v:14]
+WARNING: [Synth 8-567] referenced signal 'SR1' should be on the sensitivity list [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Shift_registers.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'shift_registers' (10#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Shift_registers.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Read_registers' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Read_Registers.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Read_registers' (11#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Read_Registers.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Write_registers' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Write_registers.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Write_registers' (12#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Write_registers.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MDR' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MDR.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'MDR' (13#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MDR.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MAR' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MAR.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MAR.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'MAR' (14#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MAR.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Processor' (15#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Processor.v:1]
+WARNING: [Synth 8-3848] Net address_LED in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:4]
+WARNING: [Synth 8-3848] Net data_LED in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:5]
+WARNING: [Synth 8-3848] Net dout1 in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:6]
+WARNING: [Synth 8-3848] Net dout2 in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:7]
+WARNING: [Synth 8-3848] Net AC_0 in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:8]
+WARNING: [Synth 8-3848] Net AC_1 in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:9]
+WARNING: [Synth 8-3848] Net AC_2 in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:10]
+WARNING: [Synth 8-3848] Net Rx_done in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:66]
+WARNING: [Synth 8-3848] Net DRAM_address in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:24]
+WARNING: [Synth 8-3848] Net DRAM_write_data in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:25]
+WARNING: [Synth 8-3848] Net write_DRAM in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:26]
+WARNING: [Synth 8-3848] Net clk_out in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:28]
+WARNING: [Synth 8-3848] Net DRAM_to_processor in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'Top_Level_Module' (16#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:1]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[15]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[14]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[13]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[12]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[7]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[6]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[5]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[4]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[3]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[2]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[1]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[0]
+WARNING: [Synth 8-3331] design PC has unconnected port instruction[15]
+WARNING: [Synth 8-3331] design PC has unconnected port instruction[14]
+WARNING: [Synth 8-3331] design PC has unconnected port instruction[13]
+WARNING: [Synth 8-3331] design PC has unconnected port instruction[12]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[15]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[14]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[13]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[12]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[7]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[6]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[5]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[4]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[3]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[2]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[1]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[0]
+WARNING: [Synth 8-3331] design ALU has unconnected port instruction[15]
+WARNING: [Synth 8-3331] design ALU has unconnected port instruction[14]
+WARNING: [Synth 8-3331] design ALU has unconnected port instruction[13]
+WARNING: [Synth 8-3331] design ALU has unconnected port instruction[12]
+WARNING: [Synth 8-3331] design IR has unconnected port clock
+WARNING: [Synth 8-3331] design statemachine has unconnected port instruction[7]
+WARNING: [Synth 8-3331] design statemachine has unconnected port instruction[6]
+WARNING: [Synth 8-3331] design statemachine has unconnected port instruction[5]
+WARNING: [Synth 8-3331] design statemachine has unconnected port instruction[4]
+WARNING: [Synth 8-3331] design statemachine has unconnected port instruction[3]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[7]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[6]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[5]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[4]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[3]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[2]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[1]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[0]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[15]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[14]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[13]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[12]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[11]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[10]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[9]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[8]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[7]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[6]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[5]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[4]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[3]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[2]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[1]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[0]
+WARNING: [Synth 8-3331] design DRAM has unconnected port clock
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[7]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[6]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[5]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[4]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[3]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[2]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[1]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[0]
+WARNING: [Synth 8-3331] design DRAM has unconnected port wren
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[15]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[14]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[13]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[12]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[11]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[10]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[9]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[8]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[7]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[6]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[5]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[4]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[3]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[2]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[1]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[0]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[7]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[6]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[5]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[4]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[3]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[2]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[1]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[0]
+WARNING: [Synth 8-3331] design IRAM has unconnected port clock
+WARNING: [Synth 8-3331] design IRAM has unconnected port data[15]
+WARNING: [Synth 8-3331] design IRAM has unconnected port data[14]
+WARNING: [Synth 8-3331] design IRAM has unconnected port data[13]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1375.797 ; gain = 1.676
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin Processor:clock to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:59]
+WARNING: [Synth 8-3295] tying undriven pin Processor:DRAM_input_data[7] to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:59]
+WARNING: [Synth 8-3295] tying undriven pin Processor:DRAM_input_data[6] to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:59]
+WARNING: [Synth 8-3295] tying undriven pin Processor:DRAM_input_data[5] to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:59]
+WARNING: [Synth 8-3295] tying undriven pin Processor:DRAM_input_data[4] to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:59]
+WARNING: [Synth 8-3295] tying undriven pin Processor:DRAM_input_data[3] to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:59]
+WARNING: [Synth 8-3295] tying undriven pin Processor:DRAM_input_data[2] to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:59]
+WARNING: [Synth 8-3295] tying undriven pin Processor:DRAM_input_data[1] to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:59]
+WARNING: [Synth 8-3295] tying undriven pin Processor:DRAM_input_data[0] to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:59]
+WARNING: [Synth 8-3295] tying undriven pin Processor:enable_processor to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:59]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1375.797 ; gain = 1.676
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1375.797 ; gain = 1.676
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1392.062 ; gain = 17.941
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1397.816 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top_Level_Module' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:1]
+INFO: [Synth 8-6157] synthesizing module 'IRAM' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IRAM.v:1]
+WARNING: [Synth 8-3848] Net q in module/entity IRAM does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IRAM.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'IRAM' (1#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IRAM.v:1]
+WARNING: [Synth 8-350] instance 'IRAM' of module 'IRAM' requires 5 connections, but only 3 given [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:49]
+INFO: [Synth 8-6157] synthesizing module 'DRAM' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/DRAM.v:1]
+WARNING: [Synth 8-3848] Net sub_wire0 in module/entity DRAM does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/DRAM.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'DRAM' (2#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/DRAM.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Processor' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Processor.v:1]
+INFO: [Synth 8-6157] synthesizing module 'statemachine' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/State_Machine.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'statemachine' (3#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/State_Machine.v:1]
+WARNING: [Synth 8-689] width (3) of port connection 'ALU_control' does not match port width (4) of module 'statemachine' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Processor.v:51]
+INFO: [Synth 8-6157] synthesizing module 'IR' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IR.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'IR' (4#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IR.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/ALU.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/ALU.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (5#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/ALU.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Bus' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Bus.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Bus.v:37]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Bus.v:99]
+INFO: [Synth 8-6155] done synthesizing module 'Bus' (6#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Bus.v:1]
+INFO: [Synth 8-6157] synthesizing module 'PC' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/PC.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (7#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/PC.v:1]
+INFO: [Synth 8-6157] synthesizing module 'IDC_controller' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IDC_controller.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IDC_controller.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'IDC_controller' (8#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IDC_controller.v:1]
+INFO: [Synth 8-6157] synthesizing module 'R' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/R.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'R' (9#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/R.v:1]
+INFO: [Synth 8-6157] synthesizing module 'shift_registers' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Shift_registers.v:1]
+WARNING: [Synth 8-567] referenced signal 'SR2' should be on the sensitivity list [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Shift_registers.v:14]
+WARNING: [Synth 8-567] referenced signal 'SR1' should be on the sensitivity list [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Shift_registers.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'shift_registers' (10#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Shift_registers.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Read_registers' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Read_Registers.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Read_registers' (11#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Read_Registers.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Write_registers' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Write_registers.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Write_registers' (12#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Write_registers.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MDR' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MDR.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'MDR' (13#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MDR.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MAR' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MAR.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MAR.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'MAR' (14#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MAR.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Processor' (15#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Processor.v:1]
+WARNING: [Synth 8-3848] Net dout1 in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:6]
+WARNING: [Synth 8-3848] Net dout2 in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:7]
+WARNING: [Synth 8-3848] Net AC_0 in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:8]
+WARNING: [Synth 8-3848] Net AC_1 in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:9]
+WARNING: [Synth 8-3848] Net AC_2 in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:10]
+WARNING: [Synth 8-3848] Net Rx_done in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:66]
+WARNING: [Synth 8-3848] Net DRAM_address in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:24]
+WARNING: [Synth 8-3848] Net DRAM_write_data in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:25]
+WARNING: [Synth 8-3848] Net write_DRAM in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:26]
+WARNING: [Synth 8-3848] Net clk_out in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:28]
+WARNING: [Synth 8-3848] Net DRAM_to_processor in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'Top_Level_Module' (16#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:1]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[15]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[14]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[13]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[12]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[7]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[6]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[5]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[4]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[3]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[2]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[1]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[0]
+WARNING: [Synth 8-3331] design PC has unconnected port instruction[15]
+WARNING: [Synth 8-3331] design PC has unconnected port instruction[14]
+WARNING: [Synth 8-3331] design PC has unconnected port instruction[13]
+WARNING: [Synth 8-3331] design PC has unconnected port instruction[12]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[15]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[14]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[13]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[12]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[7]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[6]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[5]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[4]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[3]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[2]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[1]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[0]
+WARNING: [Synth 8-3331] design ALU has unconnected port instruction[15]
+WARNING: [Synth 8-3331] design ALU has unconnected port instruction[14]
+WARNING: [Synth 8-3331] design ALU has unconnected port instruction[13]
+WARNING: [Synth 8-3331] design ALU has unconnected port instruction[12]
+WARNING: [Synth 8-3331] design IR has unconnected port clock
+WARNING: [Synth 8-3331] design statemachine has unconnected port instruction[7]
+WARNING: [Synth 8-3331] design statemachine has unconnected port instruction[6]
+WARNING: [Synth 8-3331] design statemachine has unconnected port instruction[5]
+WARNING: [Synth 8-3331] design statemachine has unconnected port instruction[4]
+WARNING: [Synth 8-3331] design statemachine has unconnected port instruction[3]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[7]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[6]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[5]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[4]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[3]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[2]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[1]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[0]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[15]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[14]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[13]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[12]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[11]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[10]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[9]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[8]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[7]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[6]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[5]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[4]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[3]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[2]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[1]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[0]
+WARNING: [Synth 8-3331] design DRAM has unconnected port clock
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[7]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[6]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[5]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[4]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[3]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[2]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[1]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[0]
+WARNING: [Synth 8-3331] design DRAM has unconnected port wren
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[15]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[14]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[13]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[12]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[11]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[10]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[9]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[8]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[7]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[6]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[5]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[4]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[3]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[2]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[1]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[0]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[7]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[6]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[5]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[4]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[3]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[2]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[1]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[0]
+WARNING: [Synth 8-3331] design IRAM has unconnected port clock
+WARNING: [Synth 8-3331] design IRAM has unconnected port data[15]
+WARNING: [Synth 8-3331] design IRAM has unconnected port data[14]
+WARNING: [Synth 8-3331] design IRAM has unconnected port data[13]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1414.891 ; gain = 17.074
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin Processor:clock to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:59]
+WARNING: [Synth 8-3295] tying undriven pin Processor:DRAM_input_data[7] to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:59]
+WARNING: [Synth 8-3295] tying undriven pin Processor:DRAM_input_data[6] to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:59]
+WARNING: [Synth 8-3295] tying undriven pin Processor:DRAM_input_data[5] to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:59]
+WARNING: [Synth 8-3295] tying undriven pin Processor:DRAM_input_data[4] to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:59]
+WARNING: [Synth 8-3295] tying undriven pin Processor:DRAM_input_data[3] to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:59]
+WARNING: [Synth 8-3295] tying undriven pin Processor:DRAM_input_data[2] to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:59]
+WARNING: [Synth 8-3295] tying undriven pin Processor:DRAM_input_data[1] to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:59]
+WARNING: [Synth 8-3295] tying undriven pin Processor:DRAM_input_data[0] to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:59]
+WARNING: [Synth 8-3295] tying undriven pin Processor:enable_processor to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:59]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1414.891 ; gain = 17.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1414.891 ; gain = 17.074
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 1443.090 ; gain = 45.273
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1529.727 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top_Level_Module' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:1]
+INFO: [Synth 8-6157] synthesizing module 'IRAM' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IRAM.v:1]
+WARNING: [Synth 8-3848] Net q in module/entity IRAM does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IRAM.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'IRAM' (1#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IRAM.v:1]
+WARNING: [Synth 8-350] instance 'IRAM' of module 'IRAM' requires 5 connections, but only 3 given [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:49]
+INFO: [Synth 8-6157] synthesizing module 'DRAM' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/DRAM.v:1]
+WARNING: [Synth 8-3848] Net sub_wire0 in module/entity DRAM does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/DRAM.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'DRAM' (2#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/DRAM.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Processor' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Processor.v:1]
+INFO: [Synth 8-6157] synthesizing module 'statemachine' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/State_Machine.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'statemachine' (3#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/State_Machine.v:1]
+WARNING: [Synth 8-689] width (3) of port connection 'ALU_control' does not match port width (4) of module 'statemachine' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Processor.v:51]
+INFO: [Synth 8-6157] synthesizing module 'IR' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IR.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'IR' (4#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IR.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/ALU.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/ALU.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (5#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/ALU.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Bus' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Bus.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Bus.v:37]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Bus.v:99]
+INFO: [Synth 8-6155] done synthesizing module 'Bus' (6#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Bus.v:1]
+INFO: [Synth 8-6157] synthesizing module 'PC' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/PC.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (7#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/PC.v:1]
+INFO: [Synth 8-6157] synthesizing module 'IDC_controller' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IDC_controller.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IDC_controller.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'IDC_controller' (8#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IDC_controller.v:1]
+INFO: [Synth 8-6157] synthesizing module 'R' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/R.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'R' (9#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/R.v:1]
+INFO: [Synth 8-6157] synthesizing module 'shift_registers' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Shift_registers.v:1]
+WARNING: [Synth 8-567] referenced signal 'SR2' should be on the sensitivity list [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Shift_registers.v:14]
+WARNING: [Synth 8-567] referenced signal 'SR1' should be on the sensitivity list [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Shift_registers.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'shift_registers' (10#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Shift_registers.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Read_registers' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Read_Registers.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Read_registers' (11#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Read_Registers.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Write_registers' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Write_registers.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Write_registers' (12#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Write_registers.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MDR' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MDR.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'MDR' (13#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MDR.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MAR' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MAR.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MAR.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'MAR' (14#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MAR.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Processor' (15#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Processor.v:1]
+WARNING: [Synth 8-3848] Net Rx_done in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:66]
+WARNING: [Synth 8-3848] Net DRAM_address in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:24]
+WARNING: [Synth 8-3848] Net DRAM_write_data in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:25]
+WARNING: [Synth 8-3848] Net write_DRAM in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:26]
+WARNING: [Synth 8-3848] Net clk_out in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:28]
+WARNING: [Synth 8-3848] Net DRAM_to_processor in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'Top_Level_Module' (16#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:1]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[15]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[14]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[13]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[12]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[7]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[6]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[5]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[4]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[3]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[2]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[1]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[0]
+WARNING: [Synth 8-3331] design PC has unconnected port instruction[15]
+WARNING: [Synth 8-3331] design PC has unconnected port instruction[14]
+WARNING: [Synth 8-3331] design PC has unconnected port instruction[13]
+WARNING: [Synth 8-3331] design PC has unconnected port instruction[12]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[15]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[14]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[13]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[12]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[7]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[6]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[5]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[4]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[3]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[2]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[1]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[0]
+WARNING: [Synth 8-3331] design ALU has unconnected port instruction[15]
+WARNING: [Synth 8-3331] design ALU has unconnected port instruction[14]
+WARNING: [Synth 8-3331] design ALU has unconnected port instruction[13]
+WARNING: [Synth 8-3331] design ALU has unconnected port instruction[12]
+WARNING: [Synth 8-3331] design IR has unconnected port clock
+WARNING: [Synth 8-3331] design statemachine has unconnected port instruction[7]
+WARNING: [Synth 8-3331] design statemachine has unconnected port instruction[6]
+WARNING: [Synth 8-3331] design statemachine has unconnected port instruction[5]
+WARNING: [Synth 8-3331] design statemachine has unconnected port instruction[4]
+WARNING: [Synth 8-3331] design statemachine has unconnected port instruction[3]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[7]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[6]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[5]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[4]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[3]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[2]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[1]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[0]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[15]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[14]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[13]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[12]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[11]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[10]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[9]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[8]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[7]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[6]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[5]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[4]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[3]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[2]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[1]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[0]
+WARNING: [Synth 8-3331] design DRAM has unconnected port clock
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[7]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[6]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[5]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[4]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[3]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[2]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[1]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[0]
+WARNING: [Synth 8-3331] design DRAM has unconnected port wren
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[15]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[14]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[13]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[12]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[11]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[10]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[9]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[8]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[7]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[6]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[5]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[4]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[3]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[2]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[1]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[0]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[7]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[6]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[5]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[4]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[3]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[2]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[1]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[0]
+WARNING: [Synth 8-3331] design IRAM has unconnected port clock
+WARNING: [Synth 8-3331] design IRAM has unconnected port data[15]
+WARNING: [Synth 8-3331] design IRAM has unconnected port data[14]
+WARNING: [Synth 8-3331] design IRAM has unconnected port data[13]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1529.727 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin Processor:clock to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:59]
+WARNING: [Synth 8-3295] tying undriven pin Processor:DRAM_input_data[7] to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:59]
+WARNING: [Synth 8-3295] tying undriven pin Processor:DRAM_input_data[6] to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:59]
+WARNING: [Synth 8-3295] tying undriven pin Processor:DRAM_input_data[5] to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:59]
+WARNING: [Synth 8-3295] tying undriven pin Processor:DRAM_input_data[4] to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:59]
+WARNING: [Synth 8-3295] tying undriven pin Processor:DRAM_input_data[3] to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:59]
+WARNING: [Synth 8-3295] tying undriven pin Processor:DRAM_input_data[2] to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:59]
+WARNING: [Synth 8-3295] tying undriven pin Processor:DRAM_input_data[1] to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:59]
+WARNING: [Synth 8-3295] tying undriven pin Processor:DRAM_input_data[0] to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:59]
+WARNING: [Synth 8-3295] tying undriven pin Processor:enable_processor to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:59]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1529.727 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1529.727 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 1556.852 ; gain = 27.125
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1559.539 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top_Level_Module' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:1]
+INFO: [Synth 8-6157] synthesizing module 'IRAM' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IRAM.v:1]
+WARNING: [Synth 8-3848] Net q in module/entity IRAM does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IRAM.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'IRAM' (1#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IRAM.v:1]
+WARNING: [Synth 8-350] instance 'IRAM' of module 'IRAM' requires 5 connections, but only 3 given [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:30]
+INFO: [Synth 8-6157] synthesizing module 'DRAM' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/DRAM.v:1]
+WARNING: [Synth 8-3848] Net sub_wire0 in module/entity DRAM does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/DRAM.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'DRAM' (2#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/DRAM.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Processor' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Processor.v:1]
+INFO: [Synth 8-6157] synthesizing module 'statemachine' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/State_Machine.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'statemachine' (3#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/State_Machine.v:1]
+WARNING: [Synth 8-689] width (3) of port connection 'ALU_control' does not match port width (4) of module 'statemachine' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Processor.v:51]
+INFO: [Synth 8-6157] synthesizing module 'IR' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IR.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'IR' (4#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IR.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/ALU.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/ALU.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (5#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/ALU.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Bus' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Bus.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Bus.v:37]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Bus.v:99]
+INFO: [Synth 8-6155] done synthesizing module 'Bus' (6#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Bus.v:1]
+INFO: [Synth 8-6157] synthesizing module 'PC' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/PC.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (7#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/PC.v:1]
+INFO: [Synth 8-6157] synthesizing module 'IDC_controller' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IDC_controller.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IDC_controller.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'IDC_controller' (8#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IDC_controller.v:1]
+INFO: [Synth 8-6157] synthesizing module 'R' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/R.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'R' (9#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/R.v:1]
+INFO: [Synth 8-6157] synthesizing module 'shift_registers' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Shift_registers.v:1]
+WARNING: [Synth 8-567] referenced signal 'SR2' should be on the sensitivity list [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Shift_registers.v:14]
+WARNING: [Synth 8-567] referenced signal 'SR1' should be on the sensitivity list [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Shift_registers.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'shift_registers' (10#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Shift_registers.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Read_registers' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Read_Registers.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Read_registers' (11#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Read_Registers.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Write_registers' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Write_registers.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Write_registers' (12#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Write_registers.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MDR' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MDR.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'MDR' (13#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MDR.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MAR' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MAR.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MAR.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'MAR' (14#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MAR.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Processor' (15#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Processor.v:1]
+WARNING: [Synth 8-3848] Net Rx_done in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:47]
+WARNING: [Synth 8-3848] Net DRAM_address in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:5]
+WARNING: [Synth 8-3848] Net DRAM_write_data in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:6]
+WARNING: [Synth 8-3848] Net write_DRAM in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:7]
+WARNING: [Synth 8-3848] Net clk_out in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:9]
+WARNING: [Synth 8-3848] Net DRAM_to_processor in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'Top_Level_Module' (16#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:1]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[15]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[14]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[13]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[12]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[7]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[6]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[5]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[4]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[3]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[2]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[1]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[0]
+WARNING: [Synth 8-3331] design PC has unconnected port instruction[15]
+WARNING: [Synth 8-3331] design PC has unconnected port instruction[14]
+WARNING: [Synth 8-3331] design PC has unconnected port instruction[13]
+WARNING: [Synth 8-3331] design PC has unconnected port instruction[12]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[15]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[14]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[13]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[12]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[7]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[6]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[5]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[4]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[3]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[2]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[1]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[0]
+WARNING: [Synth 8-3331] design ALU has unconnected port instruction[15]
+WARNING: [Synth 8-3331] design ALU has unconnected port instruction[14]
+WARNING: [Synth 8-3331] design ALU has unconnected port instruction[13]
+WARNING: [Synth 8-3331] design ALU has unconnected port instruction[12]
+WARNING: [Synth 8-3331] design IR has unconnected port clock
+WARNING: [Synth 8-3331] design statemachine has unconnected port instruction[7]
+WARNING: [Synth 8-3331] design statemachine has unconnected port instruction[6]
+WARNING: [Synth 8-3331] design statemachine has unconnected port instruction[5]
+WARNING: [Synth 8-3331] design statemachine has unconnected port instruction[4]
+WARNING: [Synth 8-3331] design statemachine has unconnected port instruction[3]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[7]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[6]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[5]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[4]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[3]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[2]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[1]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[0]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[15]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[14]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[13]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[12]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[11]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[10]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[9]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[8]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[7]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[6]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[5]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[4]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[3]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[2]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[1]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[0]
+WARNING: [Synth 8-3331] design DRAM has unconnected port clock
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[7]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[6]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[5]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[4]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[3]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[2]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[1]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[0]
+WARNING: [Synth 8-3331] design DRAM has unconnected port wren
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[15]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[14]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[13]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[12]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[11]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[10]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[9]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[8]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[7]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[6]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[5]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[4]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[3]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[2]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[1]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[0]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[7]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[6]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[5]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[4]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[3]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[2]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[1]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[0]
+WARNING: [Synth 8-3331] design IRAM has unconnected port clock
+WARNING: [Synth 8-3331] design IRAM has unconnected port data[15]
+WARNING: [Synth 8-3331] design IRAM has unconnected port data[14]
+WARNING: [Synth 8-3331] design IRAM has unconnected port data[13]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1559.539 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin Processor:clock to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:40]
+WARNING: [Synth 8-3295] tying undriven pin Processor:DRAM_input_data[7] to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:40]
+WARNING: [Synth 8-3295] tying undriven pin Processor:DRAM_input_data[6] to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:40]
+WARNING: [Synth 8-3295] tying undriven pin Processor:DRAM_input_data[5] to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:40]
+WARNING: [Synth 8-3295] tying undriven pin Processor:DRAM_input_data[4] to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:40]
+WARNING: [Synth 8-3295] tying undriven pin Processor:DRAM_input_data[3] to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:40]
+WARNING: [Synth 8-3295] tying undriven pin Processor:DRAM_input_data[2] to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:40]
+WARNING: [Synth 8-3295] tying undriven pin Processor:DRAM_input_data[1] to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:40]
+WARNING: [Synth 8-3295] tying undriven pin Processor:DRAM_input_data[0] to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:40]
+WARNING: [Synth 8-3295] tying undriven pin Processor:enable_processor to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:40]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1559.539 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1559.539 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1559.539 ; gain = 0.000
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1559.539 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top_Level_Module' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:1]
+INFO: [Synth 8-6157] synthesizing module 'IRAM' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IRAM.v:1]
+WARNING: [Synth 8-3848] Net q in module/entity IRAM does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IRAM.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'IRAM' (1#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IRAM.v:1]
+WARNING: [Synth 8-350] instance 'IRAM' of module 'IRAM' requires 5 connections, but only 3 given [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:30]
+INFO: [Synth 8-6157] synthesizing module 'DRAM' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/DRAM.v:1]
+WARNING: [Synth 8-3848] Net sub_wire0 in module/entity DRAM does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/DRAM.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'DRAM' (2#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/DRAM.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Processor' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Processor.v:1]
+INFO: [Synth 8-6157] synthesizing module 'statemachine' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/State_Machine.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'statemachine' (3#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/State_Machine.v:1]
+WARNING: [Synth 8-689] width (3) of port connection 'ALU_control' does not match port width (4) of module 'statemachine' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Processor.v:51]
+INFO: [Synth 8-6157] synthesizing module 'IR' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IR.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'IR' (4#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IR.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/ALU.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/ALU.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (5#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/ALU.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Bus' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Bus.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Bus.v:37]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Bus.v:99]
+INFO: [Synth 8-6155] done synthesizing module 'Bus' (6#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Bus.v:1]
+INFO: [Synth 8-6157] synthesizing module 'PC' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/PC.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (7#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/PC.v:1]
+INFO: [Synth 8-6157] synthesizing module 'IDC_controller' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IDC_controller.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IDC_controller.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'IDC_controller' (8#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IDC_controller.v:1]
+INFO: [Synth 8-6157] synthesizing module 'R' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/R.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'R' (9#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/R.v:1]
+INFO: [Synth 8-6157] synthesizing module 'shift_registers' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Shift_registers.v:1]
+WARNING: [Synth 8-567] referenced signal 'SR2' should be on the sensitivity list [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Shift_registers.v:14]
+WARNING: [Synth 8-567] referenced signal 'SR1' should be on the sensitivity list [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Shift_registers.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'shift_registers' (10#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Shift_registers.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Read_registers' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Read_Registers.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Read_registers' (11#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Read_Registers.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Write_registers' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Write_registers.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Write_registers' (12#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Write_registers.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MDR' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MDR.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'MDR' (13#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MDR.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MAR' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MAR.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MAR.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'MAR' (14#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MAR.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Processor' (15#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Processor.v:1]
+WARNING: [Synth 8-350] instance 'Processor' of module 'Processor' requires 8 connections, but only 7 given [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:40]
+WARNING: [Synth 8-3848] Net DRAM_address in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:5]
+WARNING: [Synth 8-3848] Net DRAM_write_data in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:6]
+WARNING: [Synth 8-3848] Net write_DRAM in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:7]
+WARNING: [Synth 8-3848] Net clk_out in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:9]
+WARNING: [Synth 8-3848] Net DRAM_to_processor in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'Top_Level_Module' (16#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:1]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[15]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[14]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[13]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[12]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[7]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[6]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[5]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[4]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[3]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[2]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[1]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[0]
+WARNING: [Synth 8-3331] design PC has unconnected port instruction[15]
+WARNING: [Synth 8-3331] design PC has unconnected port instruction[14]
+WARNING: [Synth 8-3331] design PC has unconnected port instruction[13]
+WARNING: [Synth 8-3331] design PC has unconnected port instruction[12]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[15]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[14]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[13]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[12]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[7]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[6]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[5]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[4]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[3]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[2]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[1]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[0]
+WARNING: [Synth 8-3331] design ALU has unconnected port instruction[15]
+WARNING: [Synth 8-3331] design ALU has unconnected port instruction[14]
+WARNING: [Synth 8-3331] design ALU has unconnected port instruction[13]
+WARNING: [Synth 8-3331] design ALU has unconnected port instruction[12]
+WARNING: [Synth 8-3331] design IR has unconnected port clock
+WARNING: [Synth 8-3331] design statemachine has unconnected port instruction[7]
+WARNING: [Synth 8-3331] design statemachine has unconnected port instruction[6]
+WARNING: [Synth 8-3331] design statemachine has unconnected port instruction[5]
+WARNING: [Synth 8-3331] design statemachine has unconnected port instruction[4]
+WARNING: [Synth 8-3331] design statemachine has unconnected port instruction[3]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[7]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[6]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[5]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[4]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[3]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[2]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[1]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[0]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[15]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[14]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[13]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[12]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[11]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[10]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[9]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[8]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[7]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[6]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[5]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[4]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[3]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[2]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[1]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[0]
+WARNING: [Synth 8-3331] design DRAM has unconnected port clock
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[7]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[6]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[5]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[4]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[3]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[2]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[1]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[0]
+WARNING: [Synth 8-3331] design DRAM has unconnected port wren
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[15]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[14]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[13]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[12]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[11]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[10]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[9]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[8]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[7]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[6]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[5]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[4]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[3]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[2]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[1]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[0]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[7]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[6]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[5]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[4]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[3]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[2]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[1]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[0]
+WARNING: [Synth 8-3331] design IRAM has unconnected port clock
+WARNING: [Synth 8-3331] design IRAM has unconnected port data[15]
+WARNING: [Synth 8-3331] design IRAM has unconnected port data[14]
+WARNING: [Synth 8-3331] design IRAM has unconnected port data[13]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1559.539 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin Processor:clock to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:40]
+WARNING: [Synth 8-3295] tying undriven pin Processor:DRAM_input_data[7] to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:40]
+WARNING: [Synth 8-3295] tying undriven pin Processor:DRAM_input_data[6] to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:40]
+WARNING: [Synth 8-3295] tying undriven pin Processor:DRAM_input_data[5] to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:40]
+WARNING: [Synth 8-3295] tying undriven pin Processor:DRAM_input_data[4] to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:40]
+WARNING: [Synth 8-3295] tying undriven pin Processor:DRAM_input_data[3] to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:40]
+WARNING: [Synth 8-3295] tying undriven pin Processor:DRAM_input_data[2] to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:40]
+WARNING: [Synth 8-3295] tying undriven pin Processor:DRAM_input_data[1] to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:40]
+WARNING: [Synth 8-3295] tying undriven pin Processor:DRAM_input_data[0] to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:40]
+WARNING: [Synth 8-3295] tying undriven pin Processor:enable_processor to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:40]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1559.539 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1559.539 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 1559.539 ; gain = 0.000
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1598.867 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top_Level_Module' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:1]
+INFO: [Synth 8-6157] synthesizing module 'IRAM' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IRAM.v:1]
+WARNING: [Synth 8-3848] Net q in module/entity IRAM does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IRAM.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'IRAM' (1#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IRAM.v:1]
+WARNING: [Synth 8-350] instance 'IRAM' of module 'IRAM' requires 5 connections, but only 3 given [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:30]
+INFO: [Synth 8-6157] synthesizing module 'DRAM' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/DRAM.v:1]
+WARNING: [Synth 8-3848] Net sub_wire0 in module/entity DRAM does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/DRAM.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'DRAM' (2#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/DRAM.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Processor' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Processor.v:1]
+INFO: [Synth 8-6157] synthesizing module 'statemachine' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/State_Machine.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'statemachine' (3#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/State_Machine.v:1]
+WARNING: [Synth 8-689] width (3) of port connection 'ALU_control' does not match port width (4) of module 'statemachine' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Processor.v:51]
+INFO: [Synth 8-6157] synthesizing module 'IR' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IR.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'IR' (4#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IR.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/ALU.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/ALU.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (5#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/ALU.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Bus' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Bus.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Bus.v:37]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Bus.v:99]
+INFO: [Synth 8-6155] done synthesizing module 'Bus' (6#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Bus.v:1]
+INFO: [Synth 8-6157] synthesizing module 'PC' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/PC.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (7#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/PC.v:1]
+INFO: [Synth 8-6157] synthesizing module 'IDC_controller' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IDC_controller.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IDC_controller.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'IDC_controller' (8#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IDC_controller.v:1]
+INFO: [Synth 8-6157] synthesizing module 'R' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/R.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'R' (9#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/R.v:1]
+INFO: [Synth 8-6157] synthesizing module 'shift_registers' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Shift_registers.v:1]
+WARNING: [Synth 8-567] referenced signal 'SR2' should be on the sensitivity list [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Shift_registers.v:14]
+WARNING: [Synth 8-567] referenced signal 'SR1' should be on the sensitivity list [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Shift_registers.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'shift_registers' (10#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Shift_registers.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Read_registers' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Read_Registers.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Read_registers' (11#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Read_Registers.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Write_registers' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Write_registers.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Write_registers' (12#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Write_registers.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MDR' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MDR.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'MDR' (13#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MDR.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MAR' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MAR.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MAR.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'MAR' (14#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MAR.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Processor' (15#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Processor.v:1]
+WARNING: [Synth 8-350] instance 'Processor' of module 'Processor' requires 8 connections, but only 7 given [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:40]
+WARNING: [Synth 8-3848] Net DRAM_address in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:5]
+WARNING: [Synth 8-3848] Net DRAM_write_data in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:6]
+WARNING: [Synth 8-3848] Net write_DRAM in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:7]
+WARNING: [Synth 8-3848] Net clk_out in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'Top_Level_Module' (16#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:1]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[15]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[14]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[13]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[12]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[7]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[6]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[5]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[4]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[3]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[2]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[1]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[0]
+WARNING: [Synth 8-3331] design PC has unconnected port instruction[15]
+WARNING: [Synth 8-3331] design PC has unconnected port instruction[14]
+WARNING: [Synth 8-3331] design PC has unconnected port instruction[13]
+WARNING: [Synth 8-3331] design PC has unconnected port instruction[12]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[15]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[14]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[13]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[12]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[7]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[6]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[5]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[4]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[3]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[2]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[1]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[0]
+WARNING: [Synth 8-3331] design ALU has unconnected port instruction[15]
+WARNING: [Synth 8-3331] design ALU has unconnected port instruction[14]
+WARNING: [Synth 8-3331] design ALU has unconnected port instruction[13]
+WARNING: [Synth 8-3331] design ALU has unconnected port instruction[12]
+WARNING: [Synth 8-3331] design IR has unconnected port clock
+WARNING: [Synth 8-3331] design statemachine has unconnected port instruction[7]
+WARNING: [Synth 8-3331] design statemachine has unconnected port instruction[6]
+WARNING: [Synth 8-3331] design statemachine has unconnected port instruction[5]
+WARNING: [Synth 8-3331] design statemachine has unconnected port instruction[4]
+WARNING: [Synth 8-3331] design statemachine has unconnected port instruction[3]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[7]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[6]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[5]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[4]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[3]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[2]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[1]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[0]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[15]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[14]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[13]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[12]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[11]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[10]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[9]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[8]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[7]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[6]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[5]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[4]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[3]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[2]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[1]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[0]
+WARNING: [Synth 8-3331] design DRAM has unconnected port clock
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[7]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[6]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[5]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[4]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[3]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[2]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[1]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[0]
+WARNING: [Synth 8-3331] design DRAM has unconnected port wren
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[15]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[14]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[13]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[12]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[11]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[10]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[9]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[8]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[7]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[6]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[5]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[4]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[3]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[2]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[1]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[0]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[7]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[6]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[5]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[4]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[3]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[2]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[1]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[0]
+WARNING: [Synth 8-3331] design IRAM has unconnected port clock
+WARNING: [Synth 8-3331] design IRAM has unconnected port data[15]
+WARNING: [Synth 8-3331] design IRAM has unconnected port data[14]
+WARNING: [Synth 8-3331] design IRAM has unconnected port data[13]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1601.062 ; gain = 2.195
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin Processor:clock to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:40]
+WARNING: [Synth 8-3295] tying undriven pin Processor:enable_processor to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:40]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1602.004 ; gain = 3.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1602.004 ; gain = 3.137
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1614.211 ; gain = 15.344
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1614.699 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top_Level_Module' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:1]
+INFO: [Synth 8-6157] synthesizing module 'IRAM' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IRAM.v:1]
+WARNING: [Synth 8-3848] Net q in module/entity IRAM does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IRAM.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'IRAM' (1#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IRAM.v:1]
+WARNING: [Synth 8-350] instance 'IRAM' of module 'IRAM' requires 5 connections, but only 3 given [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:30]
+INFO: [Synth 8-6157] synthesizing module 'DRAM' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/DRAM.v:1]
+WARNING: [Synth 8-3848] Net sub_wire0 in module/entity DRAM does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/DRAM.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'DRAM' (2#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/DRAM.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Processor' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Processor.v:1]
+INFO: [Synth 8-6157] synthesizing module 'statemachine' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/State_Machine.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'statemachine' (3#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/State_Machine.v:1]
+WARNING: [Synth 8-689] width (3) of port connection 'ALU_control' does not match port width (4) of module 'statemachine' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Processor.v:51]
+INFO: [Synth 8-6157] synthesizing module 'IR' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IR.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'IR' (4#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IR.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/ALU.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/ALU.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (5#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/ALU.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Bus' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Bus.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Bus.v:37]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Bus.v:99]
+INFO: [Synth 8-6155] done synthesizing module 'Bus' (6#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Bus.v:1]
+INFO: [Synth 8-6157] synthesizing module 'PC' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/PC.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (7#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/PC.v:1]
+INFO: [Synth 8-6157] synthesizing module 'IDC_controller' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IDC_controller.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IDC_controller.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'IDC_controller' (8#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IDC_controller.v:1]
+INFO: [Synth 8-6157] synthesizing module 'R' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/R.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'R' (9#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/R.v:1]
+INFO: [Synth 8-6157] synthesizing module 'shift_registers' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Shift_registers.v:1]
+WARNING: [Synth 8-567] referenced signal 'SR2' should be on the sensitivity list [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Shift_registers.v:14]
+WARNING: [Synth 8-567] referenced signal 'SR1' should be on the sensitivity list [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Shift_registers.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'shift_registers' (10#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Shift_registers.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Read_registers' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Read_Registers.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Read_registers' (11#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Read_Registers.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Write_registers' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Write_registers.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Write_registers' (12#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Write_registers.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MDR' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MDR.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'MDR' (13#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MDR.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MAR' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MAR.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MAR.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'MAR' (14#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MAR.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Processor' (15#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Processor.v:1]
+WARNING: [Synth 8-350] instance 'Processor' of module 'Processor' requires 8 connections, but only 7 given [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:40]
+WARNING: [Synth 8-3848] Net DRAM_write_data in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:6]
+WARNING: [Synth 8-3848] Net write_DRAM in module/entity Top_Level_Module does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'Top_Level_Module' (16#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:1]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[15]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[14]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[13]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[12]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[7]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[6]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[5]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[4]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[3]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[2]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[1]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[0]
+WARNING: [Synth 8-3331] design PC has unconnected port instruction[15]
+WARNING: [Synth 8-3331] design PC has unconnected port instruction[14]
+WARNING: [Synth 8-3331] design PC has unconnected port instruction[13]
+WARNING: [Synth 8-3331] design PC has unconnected port instruction[12]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[15]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[14]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[13]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[12]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[7]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[6]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[5]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[4]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[3]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[2]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[1]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[0]
+WARNING: [Synth 8-3331] design ALU has unconnected port instruction[15]
+WARNING: [Synth 8-3331] design ALU has unconnected port instruction[14]
+WARNING: [Synth 8-3331] design ALU has unconnected port instruction[13]
+WARNING: [Synth 8-3331] design ALU has unconnected port instruction[12]
+WARNING: [Synth 8-3331] design IR has unconnected port clock
+WARNING: [Synth 8-3331] design statemachine has unconnected port instruction[7]
+WARNING: [Synth 8-3331] design statemachine has unconnected port instruction[6]
+WARNING: [Synth 8-3331] design statemachine has unconnected port instruction[5]
+WARNING: [Synth 8-3331] design statemachine has unconnected port instruction[4]
+WARNING: [Synth 8-3331] design statemachine has unconnected port instruction[3]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[7]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[6]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[5]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[4]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[3]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[2]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[1]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[0]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[15]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[14]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[13]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[12]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[11]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[10]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[9]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[8]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[7]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[6]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[5]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[4]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[3]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[2]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[1]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[0]
+WARNING: [Synth 8-3331] design DRAM has unconnected port clock
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[7]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[6]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[5]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[4]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[3]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[2]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[1]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[0]
+WARNING: [Synth 8-3331] design DRAM has unconnected port wren
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[15]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[14]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[13]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[12]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[11]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[10]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[9]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[8]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[7]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[6]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[5]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[4]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[3]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[2]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[1]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[0]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[7]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[6]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[5]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[4]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[3]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[2]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[1]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[0]
+WARNING: [Synth 8-3331] design IRAM has unconnected port clock
+WARNING: [Synth 8-3331] design IRAM has unconnected port data[15]
+WARNING: [Synth 8-3331] design IRAM has unconnected port data[14]
+WARNING: [Synth 8-3331] design IRAM has unconnected port data[13]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1616.539 ; gain = 1.840
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin Processor:enable_processor to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:40]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1616.539 ; gain = 1.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1616.539 ; gain = 1.840
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1627.297 ; gain = 12.598
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1627.297 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top_Level_Module' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:1]
+INFO: [Synth 8-6157] synthesizing module 'IRAM' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IRAM.v:1]
+WARNING: [Synth 8-3848] Net q in module/entity IRAM does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IRAM.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'IRAM' (1#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IRAM.v:1]
+WARNING: [Synth 8-350] instance 'IRAM' of module 'IRAM' requires 5 connections, but only 3 given [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:30]
+INFO: [Synth 8-6157] synthesizing module 'DRAM' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/DRAM.v:1]
+WARNING: [Synth 8-3848] Net sub_wire0 in module/entity DRAM does not have driver. [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/DRAM.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'DRAM' (2#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/DRAM.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Processor' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Processor.v:1]
+INFO: [Synth 8-6157] synthesizing module 'statemachine' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/State_Machine.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'statemachine' (3#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/State_Machine.v:1]
+WARNING: [Synth 8-689] width (3) of port connection 'ALU_control' does not match port width (4) of module 'statemachine' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Processor.v:51]
+INFO: [Synth 8-6157] synthesizing module 'IR' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IR.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'IR' (4#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IR.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/ALU.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/ALU.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (5#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/ALU.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Bus' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Bus.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Bus.v:37]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Bus.v:99]
+INFO: [Synth 8-6155] done synthesizing module 'Bus' (6#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Bus.v:1]
+INFO: [Synth 8-6157] synthesizing module 'PC' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/PC.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (7#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/PC.v:1]
+INFO: [Synth 8-6157] synthesizing module 'IDC_controller' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IDC_controller.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IDC_controller.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'IDC_controller' (8#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/IDC_controller.v:1]
+INFO: [Synth 8-6157] synthesizing module 'R' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/R.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'R' (9#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/R.v:1]
+INFO: [Synth 8-6157] synthesizing module 'shift_registers' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Shift_registers.v:1]
+WARNING: [Synth 8-567] referenced signal 'SR2' should be on the sensitivity list [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Shift_registers.v:14]
+WARNING: [Synth 8-567] referenced signal 'SR1' should be on the sensitivity list [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Shift_registers.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'shift_registers' (10#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Shift_registers.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Read_registers' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Read_Registers.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Read_registers' (11#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Read_Registers.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Write_registers' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Write_registers.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Write_registers' (12#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Write_registers.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MDR' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MDR.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'MDR' (13#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MDR.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MAR' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MAR.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MAR.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'MAR' (14#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/MAR.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Processor' (15#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Processor.v:1]
+WARNING: [Synth 8-350] instance 'Processor' of module 'Processor' requires 8 connections, but only 7 given [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'Top_Level_Module' (16#1) [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:1]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[15]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[14]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[13]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[12]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[7]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[6]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[5]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[4]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[3]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[2]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[1]
+WARNING: [Synth 8-3331] design IDC_controller has unconnected port instruction[0]
+WARNING: [Synth 8-3331] design PC has unconnected port instruction[15]
+WARNING: [Synth 8-3331] design PC has unconnected port instruction[14]
+WARNING: [Synth 8-3331] design PC has unconnected port instruction[13]
+WARNING: [Synth 8-3331] design PC has unconnected port instruction[12]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[15]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[14]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[13]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[12]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[7]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[6]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[5]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[4]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[3]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[2]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[1]
+WARNING: [Synth 8-3331] design Bus has unconnected port instruction[0]
+WARNING: [Synth 8-3331] design ALU has unconnected port instruction[15]
+WARNING: [Synth 8-3331] design ALU has unconnected port instruction[14]
+WARNING: [Synth 8-3331] design ALU has unconnected port instruction[13]
+WARNING: [Synth 8-3331] design ALU has unconnected port instruction[12]
+WARNING: [Synth 8-3331] design IR has unconnected port clock
+WARNING: [Synth 8-3331] design statemachine has unconnected port instruction[7]
+WARNING: [Synth 8-3331] design statemachine has unconnected port instruction[6]
+WARNING: [Synth 8-3331] design statemachine has unconnected port instruction[5]
+WARNING: [Synth 8-3331] design statemachine has unconnected port instruction[4]
+WARNING: [Synth 8-3331] design statemachine has unconnected port instruction[3]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[7]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[6]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[5]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[4]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[3]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[2]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[1]
+WARNING: [Synth 8-3331] design DRAM has unconnected port q[0]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[15]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[14]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[13]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[12]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[11]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[10]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[9]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[8]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[7]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[6]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[5]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[4]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[3]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[2]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[1]
+WARNING: [Synth 8-3331] design DRAM has unconnected port address[0]
+WARNING: [Synth 8-3331] design DRAM has unconnected port clock
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[7]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[6]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[5]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[4]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[3]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[2]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[1]
+WARNING: [Synth 8-3331] design DRAM has unconnected port data[0]
+WARNING: [Synth 8-3331] design DRAM has unconnected port wren
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[15]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[14]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[13]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[12]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[11]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[10]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[9]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[8]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[7]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[6]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[5]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[4]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[3]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[2]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[1]
+WARNING: [Synth 8-3331] design IRAM has unconnected port q[0]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[7]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[6]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[5]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[4]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[3]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[2]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[1]
+WARNING: [Synth 8-3331] design IRAM has unconnected port address[0]
+WARNING: [Synth 8-3331] design IRAM has unconnected port clock
+WARNING: [Synth 8-3331] design IRAM has unconnected port data[15]
+WARNING: [Synth 8-3331] design IRAM has unconnected port data[14]
+WARNING: [Synth 8-3331] design IRAM has unconnected port data[13]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1627.297 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin Processor:enable_processor to constant 0 [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Top_Level_Module.v:40]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1627.297 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1627.297 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 1627.297 ; gain = 0.000

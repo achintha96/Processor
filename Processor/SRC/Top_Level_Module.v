@@ -1,49 +1,31 @@
-module Top_Level_Module(input clk_in,
-								//output wire [7:0] LED,
-								//output wire [7:0] AC_LED,
-								output [7:0] address_LED,
-								output [7:0] data_LED,
-								output [6:0] dout1,
-								output [6:0] dout2,
-								output [6:0] AC_0,
-								output [6:0] AC_1,
-								output [6:0] AC_2,
-								//input start,
-								//input clock_select,
-								input Rx,
-								output Tx,
-								output start_Tx_indicator,
-								//input select_DRAM_address,
-								output Rx_indicator,
-								output Tx_done,
-								input clear_switch);
+module Top_Level_Module(input clk_in);
 								
 wire [7:0] IRAM_address;
 wire [15:0] IRAM_to_processor;
 wire [15:0] DRAM_address;
 wire [7:0] DRAM_write_data;
 wire write_DRAM;
-wire [7:0] DRAM_read_data;
-wire clk_out;
 wire [15:0] DRAM_address_processor;
-wire [7:0] DRAM_data_processor;
 wire [7:0] DRAM_to_processor;
-wire write_DRAM_processor;
-wire enable_processor;
-wire [7:0] DRAM_data_receiver;
+//wire [7:0] DRAM_read_data;
+//wire clk_out;
+//wire [7:0] DRAM_data_processor;
+//wire write_DRAM_processor;
+//wire enable_processor;
+//wire [7:0] DRAM_to_transmitter;
+//wire [15:0] DRAM_address_receiver;
+//wire [7:0] DRAM_data_receiver;
 //wire select_DRAM_write_data;
-wire write_DRAM_receiver;
+//wire write_DRAM_receiver;
 //wire select_DRAM_write_enable;
-wire [7:0] DRAM_to_transmitter;
-wire [15:0] DRAM_address_receiver;
-wire [5:0] state_7seg;
-wire [7:0] AC_LED;
-wire Rx_done;
-assign Rx_indicator = Rx_done;
-assign address_LED = DRAM_address_receiver[15:8];
-assign data_LED = DRAM_read_data;
-wire start_Tx;
-assign start_Tx_indicator = start_Tx;
+//wire [5:0] state_7seg;
+//wire [7:0] AC_LED;
+//wire Rx_done;
+//assign Rx_indicator = Rx_done;
+//assign address_LED = DRAM_address_receiver[15:8];
+//assign data_LED = DRAM_read_data;
+//wire start_Tx;
+//assign start_Tx_indicator = start_Tx;
 								
 IRAM IRAM(.address(IRAM_address),
 		.clock(clk_in),
@@ -53,19 +35,20 @@ DRAM DRAM(.address(DRAM_address),
 		.clock(clk_in),
 		.data(DRAM_write_data),
 		.wren(write_DRAM),
-		.q(DRAM_read_data));
+		.q(DRAM_to_processor));
 		
 Processor Processor(.IRAM_address(IRAM_address),
 						  .IRAM_data(IRAM_to_processor),
-						  .clock(clk_out),
-						  .DRAM_address_processor(DRAM_address_processor),
-						  .DRAM_output_data(DRAM_data_processor),
+						  .clock(clk_in),
+						  .DRAM_address_processor(DRAM_address),
+						  .DRAM_output_data(DRAM_write_data),
 						  .DRAM_input_data(DRAM_to_processor),
-						  .write_DRAM(write_DRAM_processor),
-						  .enable_processor(Rx_done),
-						  .start_Tx(start_Tx),
-						  .LED(state_7seg),
-						  .AC_LED(AC_LED));
+						  .write_DRAM(write_DRAM)
+						  //.enable_processor(Rx_done)
+						  //.start_Tx(start_Tx),
+						  //.LED(state_7seg),
+						  //.AC_LED(AC_LED)
+						  );
 						  
 
 //DRAM_write_data_mux DRAM_write_data_mux(.outputmux(DRAM_write_data),
