@@ -1,7 +1,7 @@
 module Write_registers(input [7:0] IDC_control_RWR,
-							 input [7:0] IDC_control_CWR,
-							 output [7:0] RWR_out,
-							 output [7:0] CWR_out);
+					   input [7:0] IDC_control_CWR,
+				       output [7:0] RWR_out,
+					   output [7:0] CWR_out);
 							 
 reg [7:0] RWR;
 reg [7:0] CWR;

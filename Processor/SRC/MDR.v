@@ -1,9 +1,9 @@
 module MDR(input [7:0] DRAM_to_MDR,
-			  input [7:0] bus_to_MDR,
-			  input clock,
-			  output [7:0] MDR_to_bus,
-			  output [7:0] MDR_to_DRAM,
-			  input [1:0] MDR_control);
+		   input [7:0] bus_to_MDR,
+		   input clock,
+	       input [1:0] MDR_control,
+		   output [7:0] MDR_to_bus,
+		   output [7:0] MDR_to_DRAM);
 
 reg [7:0] MDR;
 assign MDR_to_bus = MDR;

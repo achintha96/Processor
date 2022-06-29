@@ -1,7 +1,7 @@
 module shift_registers(input wire [7:0] bus_to_SR1,
-							  output wire [7:0] SR1_to_bus,
-							  output wire [7:0] SR2_to_bus,
-							  output wire [7:0] SR3_to_bus);
+					   output wire [7:0] SR1_to_bus,
+					   output wire [7:0] SR2_to_bus,
+					   output wire [7:0] SR3_to_bus);
 
 reg [7:0] SR1;
 reg [7:0] SR2;

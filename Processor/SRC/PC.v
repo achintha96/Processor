@@ -1,9 +1,9 @@
 module PC(input wire Z_out,
-						  input [1:0] PC_control,
-						  input clock,
-						  output wire [7:0] IRAM_address,
-						  input wire [15:0] instruction);
-
+		  input [1:0] PC_control,
+		  input clock,
+		  input wire [15:0] instruction, // instrution contains both jump address & jump condition
+		  output wire [7:0] IRAM_address);		  
+		  
 reg [7:0] PC;
 reg [7:0] jump_address;
 reg [3:0] jump_condition;
@@ -48,7 +48,7 @@ begin
 		endcase
 	end
 	else if (PC_control==2'b01)
-		PC <= PC + 8'd1;
+		PC <= PC + 8'd1; //increment the PC by 1
 	else
 		PC <= PC;
 end
