@@ -67,43 +67,30 @@ Processor Processor(.IRAM_address(IRAM_address),
 						  .LED(state_7seg),
 						  .AC_LED(AC_LED));
 						  
-transceiver transceiver(.Rx(Rx),
-								.Tx(Tx),
-								.start_Tx(start_Tx),
-								.clk(clk_in),
-								.data_in(DRAM_to_transmitter),
-								.data_out(DRAM_data_receiver),
-								.ready(write_DRAM_receiver),
-								.D_address(DRAM_address_receiver),
-								.Rx_done(Rx_done),
-								//.LEDR,
-								//.LEDG,
-								.Tx_done(Tx_done),
-								.clear(clear_switch));
-						  
-DRAM_write_data_mux DRAM_write_data_mux(.outputmux(DRAM_write_data),
-													 .inputmux1(DRAM_data_processor),
-													 .inputmux2(DRAM_data_receiver),
-													 .select(Rx_done));
+
+//DRAM_write_data_mux DRAM_write_data_mux(.outputmux(DRAM_write_data),
+													 //.inputmux1(DRAM_data_processor),
+													 //.inputmux2(DRAM_data_receiver),
+													 //.select(Rx_done));
 													 
-DRAM_write_enable_mux DRAM_write_enable_mux(.outputmux(write_DRAM),
-													 .inputmux1(write_DRAM_processor),
-													 .inputmux2(write_DRAM_receiver),
-													 .select(Rx_done));
+//DRAM_write_enable_mux DRAM_write_enable_mux(.outputmux(write_DRAM),
+													 //.inputmux1(write_DRAM_processor),
+													 //.inputmux2(write_DRAM_receiver),
+													 //.select(Rx_done));
 													 
-DRAM_read_data_splitter DRAM_read_data_splitter(.output1(DRAM_to_processor),
-													  .output2(DRAM_to_transmitter),
-													  .inputsplitter(DRAM_read_data));
+//DRAM_read_data_splitter DRAM_read_data_splitter(.output1(DRAM_to_processor),
+													  //.output2(DRAM_to_transmitter),
+													  //.inputsplitter(DRAM_read_data));
 													
-DRAM_address_mux DRAM_address_mux(.outputmux(DRAM_address),
-											.inputmux1(DRAM_address_processor),
-											.inputmux2(DRAM_address_receiver),
-											.Rx_done(Rx_done),
-											.start_Tx(start_Tx));
+//DRAM_address_mux DRAM_address_mux(.outputmux(DRAM_address),
+											//.inputmux1(DRAM_address_processor),
+											//.inputmux2(DRAM_address_receiver),
+											//.Rx_done(Rx_done),
+											//.start_Tx(start_Tx));
 											
-clock_selector clock_selector(.clk_in(clk_in),
-										.clock_select(0),
-										.clk_out(clk_out));
+//clock_selector clock_selector(.clk_in(clk_in),
+										//.clock_select(0),
+										//.clk_out(clk_out));
 											
 //UART_Transceiver UART_Transceiver(.data_in(DRAM_to_transmitter),
 											 //.start_transmit(),
@@ -112,13 +99,13 @@ clock_selector clock_selector(.clk_in(clk_in),
 											 //.RX(Rx));
 											 
 											 
-state_to_7seg state_to_7seg(.bin(state_7seg),
-									 .dout1(dout1),
-									 .dout2(dout2));	
+//state_to_7seg state_to_7seg(.bin(state_7seg),
+									 //.dout1(dout1),
+									 //.dout2(dout2));	
 
-AC_to_7seg AC_to_7seg(.din(AC_LED),
-					   .dout2(AC_2),
-						.dout1(AC_1),
-						.dout0(AC_0));									 
+//AC_to_7seg AC_to_7seg(.din(AC_LED),
+					   //.dout2(AC_2),
+						//.dout1(AC_1),
+						//.dout0(AC_0));									 
 													  
 endmodule
