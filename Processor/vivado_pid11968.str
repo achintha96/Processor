@@ -4,10 +4,10 @@ Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
 SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
 IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
 
-Process ID (PID): 11684
+Process ID (PID): 11968
 License: Customer
 
-Current time: 	Wed Jun 29 08:44:00 IST 2022
+Current time: 	Wed Jun 29 14:41:09 IST 2022
 Time zone: 	India Standard Time (Asia/Colombo)
 
 OS: Windows 10
@@ -46,7 +46,7 @@ Vivado layouts directory: C:/Users/anjan/AppData/Roaming/Xilinx/Vivado/2018.3/la
 PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
 Vivado log file location: 	C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/vivado.log
 Vivado journal file location: 	C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/vivado.jou
-Engine tmp dir: 	C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/.Xil/Vivado-11684-DESKTOP-LKG9I65
+Engine tmp dir: 	C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/.Xil/Vivado-11968-DESKTOP-LKG9I65
 
 Xilinx Environment Variables
 ----------------------------
@@ -61,7 +61,7 @@ XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.3
 
 GUI allocated memory:	128 MB
 GUI max memory:		3,072 MB
-Engine allocated memory: 542 MB
+Engine allocated memory: 553 MB
 
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 
@@ -74,8 +74,6 @@ Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // Opening Vivado Project: C:\Users\anjan\OneDrive\Desktop\Pocessor\Processor\Processor\Processor.xpr. Version: Vivado v2018.3 
 // TclEventType: DEBUG_PROBE_SET_CHANGE
 // Tcl Message: open_project C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/Processor.xpr 
-// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking 816ms to process. Increasing delay to 4000 ms.
-// HMemoryUtils.trashcanNow. Engine heap size: 542 MB. GUI used memory: 49 MB. Current time: 6/29/22, 8:44:02 AM IST
 // TclEventType: MSGMGR_MOVEMSG
 // TclEventType: FILE_SET_NEW
 // TclEventType: RUN_CURRENT
@@ -96,9 +94,10 @@ Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // Tcl Message: open_project C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/Processor.xpr 
 // Tcl Message: Scanning sources... Finished scanning sources 
 // Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// HMemoryUtils.trashcanNow. Engine heap size: 565 MB. GUI used memory: 49 MB. Current time: 6/29/22, 2:41:11 PM IST
 // Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'. 
 // TclEventType: PROJECT_NEW
-// [GUI Memory]: 104 MB (+106930kb) [00:00:55]
-// [Engine Memory]: 603 MB (+481163kb) [00:00:55]
-// WARNING: HEventQueue.dispatchEvent() is taking  5412 ms.
-// HMemoryUtils.trashcanNow. Engine heap size: 652 MB. GUI used memory: 51 MB. Current time: 6/29/22, 8:44:25 AM IST
+// [GUI Memory]: 96 MB (+98534kb) [00:00:24]
+// [Engine Memory]: 606 MB (+484194kb) [00:00:24]
+// [GUI Memory]: 107 MB (+6457kb) [00:00:24]
+// WARNING: HEventQueue.dispatchEvent() is taking  3583 ms.
