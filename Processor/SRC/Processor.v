@@ -67,7 +67,7 @@ IR IR(.clock(clock),
 		
 ALU ALU(.B(Bus_to_B),
 		.ALU_control(ALU_control),
-        .AC_out(AC_to_Bus),
+    .AC_out(AC_to_Bus),
 	    .Z_out(Z_out),
 	    .instruction(instruction),
 	    //.AC_LED(AC_LED),

@@ -1,0 +1,30 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto d0d3335672ff45e8924c2a077ac733f2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Top_Level_Module_behav xil_defaultlib.Top_Level_Module xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'ALU_control' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Processor.v:51]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'ALU_control' [C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/SRC/Processor.v:69]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "C:/Users/anjan/OneDrive/Desktop/Pocessor/Processor/Processor/Processor.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.IRAM
+Compiling module xil_defaultlib.DRAM
+Compiling module xil_defaultlib.statemachine
+Compiling module xil_defaultlib.IR
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Bus
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.IDC_controller
+Compiling module xil_defaultlib.R
+Compiling module xil_defaultlib.shift_registers
+Compiling module xil_defaultlib.Read_registers
+Compiling module xil_defaultlib.Write_registers
+Compiling module xil_defaultlib.MDR
+Compiling module xil_defaultlib.MAR
+Compiling module xil_defaultlib.Processor
+Compiling module xil_defaultlib.Top_Level_Module
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Top_Level_Module_behav

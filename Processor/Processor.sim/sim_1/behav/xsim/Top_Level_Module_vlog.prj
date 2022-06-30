@@ -1,0 +1,24 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../SRC/ALU.v" \
+"../../../../SRC/Bus.v" \
+"../../../../SRC/DRAM.v" \
+"../../../../SRC/IDC_controller.v" \
+"../../../../SRC/IR.v" \
+"../../../../SRC/IRAM.v" \
+"../../../../SRC/MAR.v" \
+"../../../../SRC/MDR.v" \
+"../../../../SRC/PC.v" \
+"../../../../SRC/Processor.v" \
+"../../../../SRC/R.v" \
+"../../../../SRC/Read_Registers.v" \
+"../../../../SRC/Shift_registers.v" \
+"../../../../SRC/State_Machine.v" \
+"../../../../SRC/Write_registers.v" \
+"../../../../SRC/Top_Level_Module.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
