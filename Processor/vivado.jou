@@ -21,3 +21,51 @@ launch_simulation
 update_compile_order -fileset sim_1
 launch_simulation
 source clock.tcl
+close_sim
+launch_simulation
+source clock.tcl
+close_sim
+launch_simulation
+source clock.tcl
+synth_design -rtl -name rtl_1
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+close_sim
+launch_simulation
+source clock.tcl
+run all
+close_sim
+launch_simulation
+source clock.tcl
+run all
+run all
+close_sim
+launch_simulation
+source clock.tcl
+run all
+run all
+close_sim
+launch_simulation
+source clock.tcl
+run all
+run all
+close_sim
+launch_simulation
+source clock.tcl
+run all
+close_sim
+launch_simulation
+source clock.tcl
+run all
+run all
+close_sim
+launch_simulation
+source clock.tcl
+run all
+close_sim

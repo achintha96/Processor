@@ -1,8 +1,8 @@
 module clock();
     reg clk;
-    Top_Level_Module clock(
-    .clk(clk)
-    );
+    wire Output_ready;
+    Top_Level_Module clock(.clk(clk),.Tx_ready(Output_ready));
+    
 
     initial 
         begin
@@ -10,6 +10,6 @@ module clock();
         end
     always 
     begin
-    #10 clk = ~clk;    
+    #40 clk = ~clk;    
     end
 endmodule

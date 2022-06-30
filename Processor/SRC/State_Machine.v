@@ -1,6 +1,6 @@
 module statemachine(input [15:0] instruction,
 					input clock,
-					input enable_processor,
+					//input enable_processor,
 					output reg load_instruction,
 					output reg [3:0] ALU_control,
 					output reg [3:0] select_source,
@@ -9,8 +9,8 @@ module statemachine(input [15:0] instruction,
 					output reg [1:0] MDR_control,
 					output reg [1:0] MAR_control,
 					output reg [1:0] PC_control,
-					output reg write_DRAM
-					//output reg start_Tx,
+					output reg write_DRAM,
+					output reg start_Tx
 					//output wire [5:0] LED
 					);
 		
@@ -47,15 +47,8 @@ begin
 				MDR_control <= 2'b00;
 				MAR_control <= 2'b00;
 				write_DRAM <= 0;
-				//start_Tx <= 0;
-				if (enable_processor)
-				begin
-					state <= 8'b00010001; //fetch1
-				end
-				else
-				begin
-					state <= 8'b00010000; //start
-				end
+				start_Tx <= 0;
+				state <= 8'b00010001; //fetch1							
 			end
 			
 		8'b00010001: //fetch1 (17)
@@ -69,7 +62,7 @@ begin
 				MDR_control <= 2'b00;
 				MAR_control <= 2'b00;
 				write_DRAM <= 0;
-				//start_Tx <= 0;
+				start_Tx <= 0;
 				state <= 8'b00010010; //fetch2
 			end
 			
@@ -84,7 +77,7 @@ begin
 				MDR_control <= 2'b00;
 				MAR_control <= 2'b00;
 				write_DRAM <= 0;
-				//start_Tx <= 0;
+				start_Tx <= 0;
 				state <= {4'b0000, opcode}; //loaded instruction
 			end
 			
@@ -99,7 +92,7 @@ begin
 				MDR_control <= 2'b00;
 				MAR_control <= 2'b00;
 				write_DRAM <= 0;
-				//start_Tx <= 0;
+				start_Tx <= 0;
 				state <= 8'b00010011; //add2
 			end
 		
@@ -114,7 +107,7 @@ begin
 				MDR_control <= 2'b00;
 				MAR_control <= 2'b00;
 				write_DRAM <= 0;
-				//start_Tx <= 0;
+				start_Tx <= 0;
 				state <= 8'b00010001; //fetch1
 			end
 			
@@ -129,7 +122,7 @@ begin
 				MDR_control <= 2'b00;
 				MAR_control <= 2'b00;
 				write_DRAM <= 0;
-				//start_Tx <= 0;
+				start_Tx <= 0;
 				state <= 8'b00010100; //add2
 			end
 		
@@ -144,7 +137,7 @@ begin
 				MDR_control <= 2'b00;
 				MAR_control <= 2'b00;
 				write_DRAM <= 0;
-				//start_Tx <= 0;
+				start_Tx <= 0;
 				state <= 8'b00010001; //fetch1
 			end
 			
@@ -159,7 +152,7 @@ begin
 				MDR_control <= 2'b00;
 				MAR_control <= 2'b00;
 				write_DRAM <= 0;
-				//start_Tx <= 0;
+				start_Tx <= 0;
 				state <= 8'b00010101; //mul2
 			end
 			
@@ -174,7 +167,7 @@ begin
 				MDR_control <= 2'b00;
 				MAR_control <= 2'b00;
 				write_DRAM <= 0;
-				//start_Tx <= 0;
+				start_Tx <= 0;
 				state <= 8'b00010001; //fetch1
 			end
 			
@@ -189,7 +182,7 @@ begin
 				MDR_control <= 2'b00;
 				MAR_control <= 2'b00;
 				write_DRAM <= 0;
-				//start_Tx <= 0;
+				start_Tx <= 0;
 				state <= 8'b00010110; //div2
 			end
 			
@@ -204,7 +197,7 @@ begin
 				MDR_control <= 2'b00;
 				MAR_control <= 2'b00;
 				write_DRAM <= 0;
-				//start_Tx <= 0;
+				start_Tx <= 0;
 				state <= 8'b00010001; //fetch1
 			end
 			
@@ -219,7 +212,7 @@ begin
 				MDR_control <= 2'b00;
 				MAR_control <= 2'b00;
 				write_DRAM <= 0;
-				//start_Tx <= 0;
+				start_Tx <= 0;
 				state <= 8'b00010111; //copy2
 			end
 			
@@ -243,7 +236,7 @@ begin
 				IDC_control <= 2'b00;
 				MAR_control <= 2'b00;
 				write_DRAM <= 0;
-				//start_Tx <= 0;
+				start_Tx <= 0;
 				state <= 8'b00010001; //fetch1
 			end
 			
@@ -258,7 +251,7 @@ begin
 				MDR_control <= 2'b00;
 				MAR_control <= 2'b00;
 				write_DRAM <= 0;
-				//start_Tx <= 0;
+				start_Tx <= 0;
 				state <= 8'b00010001; //fetch1
 			end
 			
@@ -273,7 +266,7 @@ begin
 				MDR_control <= 2'b00;
 				MAR_control <= 2'b00;
 				write_DRAM <= 0;
-				//start_Tx <= 0;
+				start_Tx <= 0;
 				state <= 8'b00010001; //fetch1
 			end
 			
@@ -294,7 +287,7 @@ begin
 				MDR_control <= 2'b00;
 				MAR_control <= 2'b00;
 				write_DRAM <= 0;
-				//start_Tx <= 0;
+				start_Tx <= 0;
 				state <= 8'b00010001; //fetch1
 			end
 			
@@ -315,7 +308,7 @@ begin
 				MDR_control <= 2'b00;
 				MAR_control <= 2'b00;
 				write_DRAM <= 0;
-				//start_Tx <= 0;
+				start_Tx <= 0;
 				state <= 8'b00010001; //fetch1
 			end
 			
@@ -336,7 +329,7 @@ begin
 				MDR_control <= 2'b00;
 				MAR_control <= 2'b00;
 				write_DRAM <= 0;
-				//start_Tx <= 0;
+				start_Tx <= 0;
 				state <= 8'b00010001; //fetch1
 			end
 			
@@ -356,7 +349,7 @@ begin
 				else
 					MAR_control <= 2'b00;
 				write_DRAM <= 0;
-				//start_Tx <= 0;
+				start_Tx <= 0;
 				state <= 8'b00011000; //load2
 			end
 			
@@ -371,7 +364,7 @@ begin
 				MDR_control <= 2'b01; // MDR <= DRAM
 				MAR_control <= 2'b00;
 				write_DRAM <= 0;
-				//start_Tx <= 0;
+				start_Tx <= 0;
 				state <= 8'b00010001; //fetch1
 			end
 			
@@ -391,7 +384,7 @@ begin
 				else
 					MAR_control <= 2'b00;
 				write_DRAM <= 0;
-				//start_Tx <= 0;
+				start_Tx <= 0;
 				state <= 8'b00011001; //store2
 			end
 			
@@ -406,7 +399,7 @@ begin
 				MDR_control <= 2'b00;
 				MAR_control <= 2'b00;
 				write_DRAM <= 1; // DRAM <= MDR
-				//start_Tx <= 0;
+				start_Tx <= 0;
 				state <= 8'b00010001; //fetch1
 			end
 			
@@ -421,7 +414,7 @@ begin
 				MDR_control <= 2'b00;
 				MAR_control <= 2'b00;
 				write_DRAM <= 0;
-				//start_Tx <= 1;
+				start_Tx <= 1;        //indicate that the processing is done
 				state <= 8'b00001111; //end
 			end
 			

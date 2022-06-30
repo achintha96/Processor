@@ -1,4 +1,4 @@
-module Top_Level_Module(input clk);
+module Top_Level_Module(input clk, output Tx_ready);
 								
 wire [7:0] IRAM_address;
 wire [15:0] IRAM_to_processor;
@@ -7,6 +7,7 @@ wire [7:0] DRAM_write_data;
 wire write_DRAM;
 wire [15:0] DRAM_address_processor;
 wire [7:0] DRAM_to_processor;
+wire start_Tx;
 //wire [7:0] DRAM_read_data;
 //wire clk_out;
 //wire [7:0] DRAM_data_processor;
@@ -24,7 +25,6 @@ wire [7:0] DRAM_to_processor;
 //assign Rx_indicator = Rx_done;
 //assign address_LED = DRAM_address_receiver[15:8];
 //assign data_LED = DRAM_read_data;
-//wire start_Tx;
 //assign start_Tx_indicator = start_Tx;
 								
 IRAM IRAM(.address(IRAM_address),
@@ -43,9 +43,9 @@ Processor Processor(.IRAM_address(IRAM_address),
 						  .DRAM_address_processor(DRAM_address),
 						  .DRAM_output_data(DRAM_write_data),
 						  .DRAM_input_data(DRAM_to_processor),
-						  .write_DRAM(write_DRAM)
-						  //.enable_processor(Rx_done)
-						  //.start_Tx(start_Tx),
+						  .write_DRAM(write_DRAM),
+						  .start_Tx(Tx_ready)
+						  //.enable_processor(Rx_done)						  
 						  //.LED(state_7seg),
 						  //.AC_LED(AC_LED)
 						  );
