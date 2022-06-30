@@ -3,7 +3,7 @@ input wire [7:0] address,
 input clock,
 output reg [15:0] q);
 
-reg [15:0] IRAM [4095:0];
+reg [15:0] IRAM [4097:0];
 
 initial begin
     IRAM[0] = 16'b1100000011111111;

@@ -4,7 +4,7 @@ input clock,
 input wire [7:0] data,
 input wren,
 output reg [7:0] q);
-reg [7:0] DRAM[65535:0];
+reg [7:0] DRAM[524287:0];
 
 initial begin
     DRAM[0] = 8'b10100001;

@@ -13,7 +13,7 @@ module Processor(input wire clock,
 					  
 wire load_instruction;
 wire [15:0] instruction;
-wire [2:0] ALU_control;
+wire [3:0] ALU_control;
 wire [3:0] select_source;
 wire [2:0] select_destination;
 wire [15:0] AC_to_Bus;
