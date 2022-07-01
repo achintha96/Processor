@@ -8,7 +8,7 @@ reg [7:0] DRAM[524287:0];
 
 initial begin
     DRAM[0] = 8'b10100001;
-DRAM[1] = 8'b10100001;
+DRAM[1] = 8'b10100011;
 DRAM[2] = 8'b10011101;
 DRAM[3] = 8'b10100001;
 DRAM[4] = 8'b10100001;
@@ -65545,7 +65545,7 @@ DRAM[65534] = 8'b1101000;
 DRAM[65535] = 8'b1101100;
 end
 
-always @ (posedge clock)
+always @ (negedge clock)
 begin
     if(wren == 0)
         q <= DRAM[address];
