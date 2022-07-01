@@ -1,6 +1,5 @@
 module statemachine(input [15:0] instruction,
 					input clock,
-					//input enable_processor,
 					output reg load_instruction,
 					output reg [3:0] ALU_control,
 					output reg [3:0] select_source,
@@ -11,15 +10,16 @@ module statemachine(input [15:0] instruction,
 					output reg [1:0] PC_control,
 					output reg write_DRAM,
 					output reg start_Tx
+					//input enable_processor,
 					//output wire [5:0] LED
 					);
 		
 							
 reg [7:0] state;
-//assign LED = state[5:0];
 reg [3:0] source_register;
 reg [2:0] destination_register;
 reg [3:0] opcode;
+//assign LED = state[5:0];
 
 initial
 begin
@@ -400,6 +400,21 @@ begin
 				MAR_control <= 2'b00;
 				write_DRAM <= 1; // DRAM <= MDR
 				start_Tx <= 0;
+				state <= 8'b00010001; //fetch1
+			end
+		
+		8'b00000000: //nop (0)
+			begin
+				load_instruction <= 0;
+				ALU_control <= 4'b0000;
+				select_source <= 4'b0000;
+				select_destination <= 3'b000;
+				PC_control <= 2'b00;
+				IDC_control <= 2'b00;
+				MDR_control <= 2'b00;
+				MAR_control <= 2'b00;
+				write_DRAM <= 0;
+				start_Tx <= 0;       
 				state <= 8'b00010001; //fetch1
 			end
 			

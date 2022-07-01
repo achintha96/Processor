@@ -24,7 +24,7 @@ assign MDR_out = value[7:0];
 
 initial
 begin
-value = 16'b0000000000000111;
+value = 16'b0000000000000111; //inital value of the Bus (B_out)
 end
 
 always@(instruction)
@@ -34,7 +34,7 @@ end
 
 always@(posedge clock)
 	begin
-		case(select_source)
+		case(select_source) //selecting a source for the Bus
 		4'b0000:
 			begin
 				value <= value;
@@ -96,7 +96,7 @@ always@(posedge clock)
 	
 always@(posedge clock)
 	begin
-		case(select_destination)
+		case(select_destination) //selecting a destination for the Bus
 		3'b000:
 			begin
 				value <= value;

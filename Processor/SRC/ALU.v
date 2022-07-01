@@ -10,8 +10,8 @@ reg [15:0] AC;
 reg [11:0] load_constant;
 reg Z;
 assign AC_out = AC;
-//assign AC_LED = AC[7:0];
 assign Z_out = Z;
+//assign AC_LED = AC[7:0];
 
 initial
 begin
