@@ -94,7 +94,7 @@ always@(posedge clock)
 	end
 	
 	
-always@(posedge clock)
+always@(negedge clock)
 	begin
 		case(select_destination) //selecting a destination for the Bus
 		3'b000:

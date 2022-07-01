@@ -11,3 +11,14 @@
 #-----------------------------------------------------------
 start_gui
 open_project {C:/Users/anjan/OneDrive/Desktop/New folder/Processor/Processor/Processor.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source clock.tcl
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
